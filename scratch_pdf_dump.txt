@@ -1,0 +1,994 @@
+=== PAGE 1 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 1
+ Isarva Restaurant POS
+ ISO/IEC 27001:2022 — Draft v0.1
+ Isarva Restaurant POS
+Customer User Guide
+Field
+Value
+Document ID
+ISARVA-CG-001
+Title
+Customer User Guide - Complete setup, Settings, floor ticket actions, stock, reports and all
+modules
+Version
+1.2
+Language
+Simple English (for restaurant customers)
+Product
+Isarva Restaurant POS
+App URL
+https://app.restaurant-pos.isarva.in
+Audience
+Restaurant Owner / Admin / Staff
+Organisation
+Isarva
+Welcome
+This guide helps you set up and use Isarva Restaurant POS in a simple way.
+Please follow the steps one by one. Do not skip the early steps.
+If something is not clear, ask your Isarva support person or your restaurant Admin.
+Part A — Before you start
+What you need
+1. A computer, laptop, or tablet with internet.
+2. Google Chrome or Microsoft Edge browser (recommended).
+3. Your Company Code (given by Isarva).
+4. Your Admin username and password / PIN (given by Isarva).
+5. Your restaurant name, VAT / tax details, and branch address ready.
+Important tips
+1. Keep your password secret. Do not share it with everyone.
+2. Always select the correct branch before taking orders.
+3. If the screen shows Offline, you can still take some orders, but sync will happen when internet comes back.
+4. Do not store customer card numbers in order notes.
+Part B — First-time setup (do this only once per till)
+Step 1 — Open the POS website
+1. Open your browser.
+2. Go to: https://app.restaurant-pos.isarva.in
+3. Wait for the login / activate screen to open.
+Step 2 — Activate this POS for your restaurant
+This is the first and most important step.
+
+=== PAGE 2 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 2
+1. On the screen, find Activate POS (or company code box).
+2. Type your Company Code given by Isarva.
+Example: C001 (You can also use VAT / tax ID if Isarva registered that for you.)
+3. Company code must be at least 3 characters.
+4. Tap or click Activate POS.
+5. Wait until the screen shows your restaurant name.
+6. If activation fails, check the code again. If still failing, call Isarva support.
+After activation, this till belongs to your restaurant only.
+Step 3 — Sign in as Admin
+1. Enter your Admin username.
+2. Enter your PIN or password.
+3. Tap Sign in.
+4. You should see the Home / main menu.
+If login fails:
+1. Check Caps Lock.
+2. Tap Refresh on the login screen and try again.
+3. Ask Isarva if your user is active.
+Step 4 — Choose language (optional)
+1. Use the language switch (EN / AR) if you need Arabic.
+2. You can change language anytime later.
+Step 5 — Set company and branches
+1. Open Settings.
+2. Open Company & Branches.
+3. Check your company name, logo (if any), and VAT details.
+4. Add each branch of your restaurant (name, address, phone).
+5. Save the details.
+6. On the top bar, select the correct branch for this till.
+Note: Day close, tables, and stock work per branch. Always check the branch name before work.
+Step 6 — Fill company tax / ZATCA details (KSA)
+1. Open Settings → Company Details (or ZATCA / tax section).
+2. Enter correct company legal name, address, and VAT number.
+3. If Isarva enabled ZATCA Phase 2 for you, complete the onboarding checklist only with support guidance.
+4. Do not share ZATCA private keys on WhatsApp or email.
+Step 7 — Create your menu (Masters)
+Follow Part N (Products / catalog) in detail. Short path:
+1. Open Masters (or Settings → Products).
+2. Create Categories, then Dishes.
+3. Create Addons and attach them to dishes.
+4. Set Tax, Units, Departments, Extra Charges as needed.
+5. Sync other tills after save.
+
+=== PAGE 3 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 3
+Step 8 — Create floor tables (for dine-in)
+Follow Part L12–L13. Short path:
+1. Settings → Table Area, then Table Management.
+2. Create areas, then tables.
+3. Confirm on Dine-in floor.
+Step 9 — Create staff users
+Follow Part O. Short path:
+1. Settings → User tab → User list / Roles / Privileges / PIN.
+2. Add each staff with correct role and branch.
+3. Do not share one Admin login with all staff.
+Step 10 — Set payment types, printers, and stock basics
+1. Payment types — Part P2.
+2. Printers + mapping — Part M (do a test print).
+3. If you track inventory: Vendors, Storage locations, Ingredients — Parts L8, Q, R.
+4. Save everything.
+Step 11 — Quick test before real customers
+1. Open one test table or takeaway order.
+2. Add 1–2 items.
+3. Send to kitchen (if you use kitchen).
+4. Settle with cash as a test.
+5. Confirm receipt looks correct.
+6. If test is OK, you are ready for live use.
+Part C — Daily opening checklist
+Do this every morning:
+1. Open the POS website.
+2. Sign in with your own user.
+3. Confirm top bar shows correct branch.
+4. Confirm status chip shows Online (if internet is available).
+5. Confirm menu and tables look correct.
+6. Check printer paper (receipt / kitchen) if you use printers.
+7. Start taking orders.
+Part D — How to take a dine-in order (Floor)
+This part explains the Dine-in / Floor ticket screen — including Discount, Extra charges, Tax (VAT), Save buttons, KOT,
+Split, Change Table, Merge Tables, and Settle.
+Step 1 — Open the table
+1. Tap Dine-in.
+2. Select the guest table.
+3. Open / seat the table (enter number of guests if asked).
+
+=== PAGE 4 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 4
+Step 2 — Add food items
+1. Choose category.
+2. Tap the dish.
+3. Select quantity.
+4. Add notes if needed (Example: “No onion”, “Less spicy”).
+5. Select add-ons if the screen shows them.
+6. Add the item to the order.
+7. Check Subtotal on the right side of the ticket.
+Step 3 — Understand the bill totals (Tax / VAT)
+On the right ticket panel you will see:
+1. Subtotal — food total before discount.
+2. Discount (%) — money reduced after you pick a discount %.
+3. Extra charges lines — if you switched on any charge (Example: Service charges, Parking).
+4. VAT / tax lines — tax is calculated by the system from Tax settings and item tax. You normally do not type tax by hand on
+the floor.
+5. Total — final amount (includes VAT when tax is on).
+Important: To change tax rates for the restaurant, Admin must go to Settings → Tax (and Tax Update / Menu details). On
+the floor you only *see* tax on the bill.
+Step 4 — How to use Discount on the floor
+1. Open the table ticket (items already added).
+2. Find the DISCOUNT row under the totals.
+3. Tap a percent button: 0%, 7%, 10% (or other % your Admin set in Settings → Discount).
+4. The active button becomes dark.
+5. Check that Discount amount and Total updated.
+6. Tap 0% if you want to remove discount.
+Notes:
+ Only use discount if your shop allows it.
+ Discount % is for this table ticket.
+ If no % buttons show, Admin must create discounts in Settings → Discount.
+Step 5 — How to use Extra Charges on the floor
+1. Extra charges must first be created in Settings → Extra Charges (and set Active).
+2. On the table ticket, find EXTRA CHARGES.
+3. Tap a charge pill to turn it ON (Example: “Service charges as per policy · SAR 150.00”).
+4. Tap again to turn it OFF.
+5. When ON, the charge line appears in the totals and Total increases.
+6. Tax on that charge (if configured) is handled by the system.
+Examples you may see: Service charges, Parking Charges, packing fee, and so on.
+Step 6 — Save / Save & Print / Save & Bill
+These three buttons keep the order without finishing payment.
+Button
+What it does
+When to use
+Save
+Saves the ticket in the system
+Guest will order more later; you need to leave the
+screen
+
+=== PAGE 5 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 5
+Button
+What it does
+When to use
+Save & Print
+Saves and prints a slip
+Guest or waiter needs a printed copy now
+Save & Bill
+Saves and opens / prints guest bill preview (temp
+bill style)
+Guest asked for the bill to review before pay
+Steps:
+1. Add items first (buttons stay disabled if the ticket is empty).
+2. Tap Save, or Save & Print, or Save & Bill.
+3. Confirm print came on the receipt printer if you chose print.
+Food Server tip: Use Save & Bill when guest wants to see the bill. Final money collection is usually Settle by
+Cashier/Admin.
+Step 7 — Send to kitchen: KOT and KOT & Print
+Button
+What it does
+KOT (may show number like KOT (2))
+Sends pending items to kitchen / KDS. Number = items waiting to send
+KOT & Print
+Sends pending items (if any) and prints kitchen / bill slip as designed
+Steps:
+1. After adding new items, tap KOT.
+2. Confirm kitchen screen or KOT printer got the order.
+3. Use KOT & Print if you also need paper in hand.
+4. If nothing is pending, system may say there is nothing to send — that is normal.
+Do not only Save if kitchen must cook — always send KOT for new food.
+Step 8 — Change Table
+Use when guests move to another table.
+1. Open the current table ticket.
+2. Tap Change Table.
+3. Select the new empty / target table.
+4. Confirm.
+5. Old table should become free; order now shows on the new table.
+6. Check floor map once.
+Who can do this: users with Change Table permission (usually Food Server / Admin).
+Step 9 — Merge Tables
+Use when two tables want one combined bill.
+1. Open the main / host table (the table that will keep the bill).
+2. Tap Merge Tables.
+3. Select the other table(s) to merge into this one.
+4. Confirm merge.
+5. Items from linked tables come onto the host bill.
+6. Floor may show a Merged badge.
+7. Settle once on the host table.
+Tips:
+ Merge carefully — confirm with guests first.
+ After merge, pay on the host table.
+
+=== PAGE 6 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 6
+ If you are not sure, ask Admin before merging busy tables.
+Step 10 — Split (open Settle in split mode)
+Split on the floor opens the Settle window ready for split payment (one bill, many payment methods or people).
+1. Open table ticket.
+2. Check Total is correct (discount / charges / VAT ok).
+3. Tap Split.
+4. Settle window opens (see Part E for Equal / Custom split and payment steps).
+5. Add payments until Remaining is SAR 0.00.
+6. Tap Confirm split (or confirm settle).
+Step 11 — Settle (full payment)
+1. Open table ticket.
+2. Tap Settle (brown / main pay button).
+3. Settle window opens: Settle — Table XX.
+4. Amount due shows incl. VAT.
+5. Follow Part E to take cash / card / voucher / split.
+6. After success, table becomes free.
+Step 12 — Add more items later
+1. Open the same table again.
+2. Add new items.
+3. Tap KOT again for the new items only.
+4. Update discount / extra charges if needed before final Settle.
+Part E — Settle screen (payment, split, food voucher, gift card)
+This is the window titled Settle — Table XX (same idea for Takeaway / Quick Serve / Barcode settle).
+E1 — What you see on Settle
+1. Amount due … incl. VAT — total to collect (tax already included when tax is on).
+2. Equal / Custom tabs — for split bills.
+3. Remaining bar — how much is still unpaid.
+4. Quick buttons like Rest → Cash, Rest → mada, Rest → Visa / Mastercard, Rest → Apple Pay, Rest → STC Pay,
+channel names if enabled.
+5. Fill remaining / Half remaining — fill amount boxes fast.
+6. Payment type dropdown + amount + Add.
+7. Confirm split / confirm pay — enabled only when Remaining is 0.00.
+E2 — Pay full bill with one method (simple)
+1. Tap Settle from floor.
+2. Tap Rest → Cash (or mada / Visa / etc.).
+3. Or choose payment type, tap Fill remaining, then Add.
+4. When Remaining is SAR 0.00, confirm.
+5. Give receipt to guest.
+E3 — Equal split (same amount to many people)
+
+=== PAGE 7 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 7
+1. Open Settle (or tap Split on floor).
+2. Tap Equal.
+3. Choose number of parts if asked (2, 3, 4…).
+4. Take each part’s payment (cash/card as needed).
+5. Confirm when Remaining is 0.
+E4 — Custom split (different amounts / methods)
+1. Open Settle → tap Custom.
+2. Remaining shows full amount first.
+3. Choose method (Cash, mada, Visa…).
+4. Enter amount (or tap Half remaining / Fill remaining).
+5. Tap Add.
+6. Remaining reduces.
+7. Add next payment until Remaining is SAR 0.00.
+8. Tap Confirm split.
+9. If Confirm is grey, some amount is still remaining — add more payment.
+Example: Guest pays SAR 200 cash + rest on mada.
+E5 — Food voucher on Settle
+1. Food vouchers must be created first in Settings → Food vouchers.
+2. On Settle, open Food voucher payment option (voucher / food voucher button or pay type).
+3. Enter or select voucher code as the screen asks.
+4. Confirm voucher amount applies (it reduces amount due).
+5. Pay any Remaining by cash/card.
+6. Finish settle only when Remaining is 0.
+7. Used voucher should not be reused.
+E6 — Gift card on Settle
+1. Gift cards are created in Settings → Gift cards.
+2. On Settle, choose gift card pay option.
+3. Enter card number / scan as guided.
+4. Apply amount.
+5. Pay remaining balance with another method if needed.
+6. Confirm settle.
+E7 — Loyalty points (if guest in CRM)
+1. Select / search customer on Settle if shown.
+2. Enter points to redeem if allowed.
+3. Due amount reduces.
+4. Pay remaining normally.
+E8 — Card / mada / wallets
+1. Choose mada, Visa / Mastercard, Apple Pay, STC Pay, etc.
+2. Follow SoftPOS / terminal steps.
+3. Wait for real approval.
+
+=== PAGE 8 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 8
+4. If terminal is not ready, payment will not approve — call Admin (Settings → Card / SoftPOS).
+E9 — If payment fails
+1. Keep the ticket open. Do not force-close.
+2. Try again or change method.
+3. For split, remove wrong line if the screen allows and re-add.
+4. Call Admin.
+E10 — Same buttons on other sections
+These work in a similar way (where the screen has them):
+Section
+Discount / Extra charges
+KOT / Save
+Settle / Split / Voucher
+Dine-in (Floor)
+Yes
+Yes
+Yes
+Takeaway
+Usually yes
+Send / KOT style
+Settle + voucher
+Drive-thru
+Usually yes
+Send
+Settle
+Quick Serve
+As shown
+Fast cart
+Settle
+Barcode
+As shown
+-
+Settle
+Delivery / Online
+Channel rules
+Send kitchen
+Settle / prepaid as designed
+Always check Total incl. VAT before you confirm pay.
+Part F — Takeaway / drive-thru
+1. Open Takeaway or Drive-thru.
+2. Create a new order.
+3. Add items and notes.
+4. Send to kitchen if required.
+5. Take payment as per your shop rule (before or at handover).
+6. Mark order completed when guest collects food.
+Part G — Delivery and online orders
+Delivery / aggregator orders
+1. Open Delivery or Online.
+2. Check new orders from apps (HungerStation, Jahez, etc. if connected).
+3. Confirm items and address.
+4. Send to kitchen.
+5. Assign rider when ready.
+6. Update status as per your process.
+Guest QR menu (if enabled)
+1. Admin opens Online settings and copies the QR menu link.
+2. Make sure the link has the correct company code (co=).
+3. Guest opens link on phone, selects items, and places order.
+4. Order comes into your Online / takeaway queue.
+5. Staff prepares and completes it like other orders.
+
+=== PAGE 9 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 9
+Part H — Kitchen screen (Kitchen Manager)
+1. Sign in as Kitchen Manager.
+2. Open Kitchen.
+3. Choose board if shown: All / Kitchen / Bar / Expo.
+4. Read item notes carefully (spice level, allergy notes).
+5. Mark item started / done (bump) when ready.
+6. Do not bump wrong station items.
+7. If an item is finished in stock (86), tell Admin and floor immediately.
+Part I — Delivery rider
+1. Sign in on phone/tablet as Rider.
+2. Open Delivery.
+3. Open your assigned order.
+4. Check address and phone.
+5. Mark started when you leave restaurant.
+6. Mark delivered when guest receives order.
+7. If cash on delivery, give cash to Cashier as per shop rule.
+8. If guest not reachable, call restaurant. Do not throw food without approval.
+Part J — Day close (Admin / authorised user)
+1. Make sure open tables are settled as much as possible.
+2. Open Back Office / Day close (Accounts area).
+3. Count cash in drawer.
+4. Compare with system cash sales.
+5. Enter counted amount.
+6. Confirm day close for this branch.
+7. Keep the day-close report for accounts.
+Remember: Day close is separate for each branch.
+Part K — How to open Settings (all modules)
+1. Sign in as Admin.
+2. From Home or left menu, open Settings.
+3. At the top of Settings you will see tabs. Open each tab for related options:
+ Business
+ Printer
+ Products (catalog and pricing)
+ User
+ Accounts
+ Ingredients
+ Inventory
+
+=== PAGE 10 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 10
+ Database
+4. Tap any tile to open that module.
+5. If a tile says “coming later”, that feature is not ready. Please skip it.
+Part L — Settings → Business
+L1. Company Details
+Where: Settings → Company Details
+1. Open Company Details.
+2. Enter restaurant brand name and legal name.
+3. Enter VAT / tax number and address carefully.
+4. Add or edit Branches (each outlet).
+5. Save.
+6. On the till top bar, select the branch you are working on.
+Do this first after you Activate POS.
+L2. ZATCA e-invoice setup
+Where: Settings → Company Details (ZATCA section)
+1. Open company tax / ZATCA area.
+2. Fill seller details needed for KSA e-invoice.
+3. For Phase 2 onboarding (OTP, CSID), do only with Isarva support.
+4. Do not share private keys on WhatsApp or email.
+L3. ZATCA invoice queue
+Where: Settings → ZATCA invoices (queue)
+1. Open the invoice queue.
+2. Check status: pending, failed, reported.
+3. Retry failed invoices if the button is available.
+4. If many invoices keep failing, call Isarva support.
+L4. Customers (CRM)
+Where: Settings → Customers, or menu CRM
+1. Search guest by phone or name.
+2. Add new customer if needed.
+3. Check loyalty points.
+4. Save changes.
+L5. Gift cards
+Where: Settings → Gift cards
+1. Open Gift cards.
+2. Create or issue a gift card with value.
+3. Note the card number for the guest.
+4. At payment time, Cashier can redeem the gift card.
+5. Always check balance before redeem.
+L6. Food vouchers
+
+=== PAGE 11 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 11
+Where: Settings → Food vouchers
+1. Create food voucher as per your offer.
+2. Set value and rules as shown on screen.
+3. Redeem at settle when guest shows voucher.
+4. Do not issue too many vouchers without control.
+L7. Loyalty campaigns
+Where: Settings → Loyalty campaigns
+1. Open Loyalty campaigns.
+2. Set birthday bonus if you want.
+3. Set visit punch-card rules (Example: after 5 visits, give reward).
+4. Save.
+5. Train Cashiers to search guest phone at bill time.
+L8. Vendors (suppliers)
+Where: Settings → Vendor, or menu Vendors / Suppliers
+1. Add supplier name, phone, and details.
+2. Save vendor.
+3. Use this vendor later in Purchase Orders and Stock receiving.
+L9. Delivery Boy (riders)
+Where: Settings → Delivery Boy
+1. Add rider name and phone.
+2. Save.
+3. On Delivery orders, assign this rider.
+4. Rider login may use last 4 digits of phone (as configured).
+L10. Notification settings
+Where: Settings → Notification Settings (with Delivery Integrations)
+1. Open notifications / alerts section.
+2. Turn on the alerts you need.
+3. Save.
+4. Check notify log if alert did not come.
+L11. Delivery APIs (aggregators)
+Where: Settings → Delivery APIs / Delivery Integrations
+1. Open Delivery Integrations.
+2. Select channel (Example: HungerStation, Jahez, Keeta).
+3. Enter API credentials from the platform.
+4. Tap Test connection.
+5. Use live orders only after test success.
+6. If test fails, do not guess keys — call support.
+L12. Table Area
+Where: Settings → Table Area (Floor)
+1. Create areas: Indoor, Outdoor, Family, and so on.
+
+=== PAGE 12 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 12
+2. Set active / order if the screen shows it.
+3. Save.
+4. Areas appear in Dine-in floor filter.
+L13. Table Management
+Where: Settings → Table Management
+1. Add tables (Table 1, Table 2…).
+2. Set seats and area.
+3. Save.
+4. Open Dine-in and confirm tables show on floor map or list.
+L14. Menu timetable
+Where: Settings → Menu timetable
+1. Open Menu timetable.
+2. Set which menu or items are available at which time (breakfast, lunch, dinner).
+3. Save.
+4. At that time, check that only correct items show.
+L15. Addons
+Where: Settings → Addons
+1. Create addon groups (Example: Extra toppings, Cooking style).
+2. Add options and prices.
+3. Go to Masters → dish → attach addon to the dish.
+4. If you do not attach, addon will not show while ordering.
+L16. Card / SoftPOS terminal
+Where: Settings → Card / SoftPOS
+1. Open Card terminal settings.
+2. Check bridge / terminal status.
+3. Use demo simulate only for training. Turn it off for live sales.
+4. Live card payment needs a working bridge. Otherwise payment will not approve.
+L17. Counter / Quick serve
+Where: Settings → Counter, or menu Quick Serve
+1. Use for fast counter orders without table.
+2. Add items → take payment → finish.
+Part M — Settings → Printer
+Open Settings → tab Printer.
+M1. Receipt Printer
+Where: Settings → Printer → Receipt Printer
+1. Open Receipt Printer.
+2. Select printer or station.
+3. Set copies and paper width if asked.
+4. Set header and footer text (shop name, VAT, thank you note).
+
+=== PAGE 13 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 13
+5. Save.
+6. Print one test receipt after a test bill.
+M2. KOT Printer
+Where: Settings → Printer → KOT Printer
+1. Open KOT Printer.
+2. Add kitchen print station(s).
+3. Save.
+4. Send a test KOT from Dine-in and confirm print in kitchen.
+M3. Printer Mapping
+Where: Settings → Printer → Printer Mapping
+1. Open Printer Mapping.
+2. Map each department or station to the correct KOT printer.
+Example: Hot kitchen → Kitchen printer, Juice → Bar printer.
+3. Save.
+4. Wrong mapping means ticket prints in the wrong place.
+M4. Print designs / templates
+Where: Settings → Printer → Print designs
+1. Open print templates.
+2. Choose receipt or kitchen template style.
+3. Preview if available.
+4. Save.
+5. Do a real test print before busy service.
+Part N — Settings → Products (Catalog and pricing)
+Open Settings → tab Products.
+N1. Department List
+Where: Settings → Department List
+1. Create departments (Kitchen, Bar, Grill, and so on).
+2. Set colour if shown.
+3. Departments help KOT routing and menu structure.
+4. Save.
+N2. Menu items (Masters dishes)
+Where: Settings → Menu items, or Masters → Dishes
+1. Create categories first (Main / Sub).
+2. Add dish: name, price, department, tax.
+3. Add photo if you want.
+4. Attach recipes, addons, and customizer as needed.
+5. Save and sync other tills.
+N3. Menu details (tax and photos)
+Where: Settings → Menu details
+
+=== PAGE 14 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 14
+1. Open Menu details.
+2. Assign tax to products.
+3. Update photos and extra product fields.
+4. Save.
+N4. Tax
+Where: Settings → Tax
+1. Open Tax master.
+2. Confirm VAT rate (Example: 15% in KSA).
+3. Save.
+4. Do not change tax casually after go-live without accounts advice.
+N5. Tax Update (bulk)
+Where: Settings → Tax Update
+1. Open Tax Update.
+2. Apply tax to many products together.
+3. Confirm before save.
+4. Check 1–2 sample bills after update.
+N6. Discount master
+Where: Settings → Discount
+1. Create discount types your shop allows.
+2. Save.
+3. Only authorised roles should give discount.
+N7. Units
+Where: Settings → Units
+1. Add units for stock and recipes (kg, g, litre, piece, and so on).
+2. Save.
+3. Use the same units in ingredients and recipes.
+N8. Extra Charges
+Where: Settings → Extra Charges
+1. Add charges like service charge, packing, delivery fee.
+2. Set tax on charge if required.
+3. Save.
+4. Confirm charge appears on bill when applied.
+N9. Beverages Quantity Master
+Where: Settings → Beverages Quantity Master
+1. Define beverage sizes or quantities (Small, Large, 330ml, and so on).
+2. Save.
+N10. Beverages Price Master
+Where: Settings → Beverages Price Master
+1. Set price for each beverage quantity.
+2. Save.
+
+=== PAGE 15 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 15
+3. Test one beverage order.
+N11. Online Price List / Online orders
+Where: Online module
+1. Open Online.
+2. Check online order types and channel prices if separate.
+3. When menu price changes, update online prices also.
+Part O — Settings → User
+Open Settings → tab User.
+O1. User list
+Where: Settings → User list
+1. Add staff: username, name, role, branch access.
+2. Set active status.
+3. Save.
+4. Share login only with that staff person.
+O2. Roles
+Where: Settings → Roles
+1. Review roles: Admin, Cashier, Food Server, Kitchen Manager, Rider.
+2. Create custom role only if needed.
+3. Do not give Admin to everyone.
+O3. Role Privilege
+Where: Settings → Role Privilege
+1. Open privileges for a role.
+2. Tick only what that job needs (settle, stock, masters, back office, and so on).
+3. Save.
+4. Ask staff to sign out and sign in again so rights refresh.
+O4. PIN / Login
+Where: Settings → User list (PIN section)
+1. Set or reset staff PIN or password.
+2. Tell staff to keep PIN secret.
+3. When staff leaves the job, disable user the same day.
+Part P — Settings → Accounts (and Accounts hub)
+Open Settings → tab Accounts, or menu Accounts.
+P1. Accounts hub
+1. Open Accounts hub.
+2. From here open payment types, expenses, ledger, day close, and related finance screens.
+P2. Payment types
+1. Keep Cash, Card, and other tenders active as you use them.
+2. Disable unused types so cashier does not select wrong tender.
+
+=== PAGE 16 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 16
+3. Save.
+P3. Expense types
+1. Create types: Rent, Electricity, Gas, Cleaning, and so on.
+2. Save.
+P4. Expense details
+1. Log each expense with type, amount, date, and invoice note.
+2. Save.
+3. Use this for monthly cost and P&L report.
+P5. Sales Ledger
+Where: Back Office → Sales
+1. Open sales ledger for the day.
+2. Check tenders and sales totals.
+3. Use this before day close.
+P6. Day Close
+Where: Back Office → Day Close
+1. Settle open tables as much as possible.
+2. Count drawer cash.
+3. Enter counted amount.
+4. Confirm day close for this branch.
+5. Keep report for accounts.
+P7. Shift (cash drawer shift)
+Where: Back Office → Shift
+1. Open or close cashier shift if your shop uses shift count.
+2. This is different from staff time clock.
+P8. Time clock
+Where: Back Office → Time clock
+1. Staff clock in and clock out.
+2. Export hours if needed for salary.
+3. This is attendance — not the same as day close.
+Part Q — Settings → Ingredients
+Open Settings → tab Ingredients.
+Q1. Ingredient Master
+Where: Settings → Ingredient Master
+1. Add raw materials: name, SKU, unit.
+2. Set preferred vendor and default storage if asked.
+3. Save.
+4. This screen is master data. On-hand quantity is in Stock / Inventory.
+Q2. Menu item recipes
+Where: Masters → open dish → recipe / ingredients
+
+=== PAGE 17 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 17
+1. Open the dish.
+2. Assign ingredients with quantity used per portion.
+3. Save.
+4. Good recipes help food-cost report and stock use (where enabled).
+Q3. Recipe usage
+Where: Settings → Recipe usage
+1. Open Recipe usage.
+2. See what each menu item consumes.
+3. Fix wrong recipe quantity here if needed.
+Part R — Settings → Inventory (Stock modules)
+Open Settings → tab Inventory, or menu Stock.
+R1. Storage locations
+Where: Settings → Storage locations
+1. Create locations: Main store, Kitchen, Bar, Walk-in, Pastry.
+2. Save.
+3. Use these in stock transfer.
+R2. Yield conversions
+Where: Settings → Yield conversions
+1. Link raw item to prepped item (Example: whole chicken → cleaned chicken).
+2. Set conversion factor.
+3. Save.
+4. Use when you produce or prep stock.
+R3. Stock receiving
+Where: Settings → Stock receiving
+1. Open Stock receiving.
+2. Select vendor or PO if linked.
+3. Enter items and quantities received.
+4. Confirm receive.
+5. Open Stock Master — quantity should increase.
+R4. Stock transfer
+Where: Settings → Stock transfer
+1. Open Stock transfer.
+2. Choose from-location or branch and to-location or branch.
+3. Add items and quantity.
+4. Confirm transfer.
+5. Check stock on both sides after transfer.
+6. Do not transfer in system if you did not move stock physically.
+R5. Purchase Order (PO)
+Where: Purchase Orders menu, or Inventory → PO
+
+=== PAGE 18 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 18
+1. Create PO for a vendor.
+2. Add items and ordered quantity.
+3. Save or send as per your process.
+4. When goods arrive, receive against PO on receiving screen.
+5. Close PO when complete.
+R6. Stock Master (on-hand)
+Where: Stock / Inventory
+1. Open Stock list.
+2. Search item.
+3. Check on-hand quantity and value.
+4. Adjust stock only with Manager approval (waste, count correction).
+5. Enter reason for adjustment.
+Suggested stock weekly flow
+1. Raise PO → vendor delivers → Stock receiving.
+2. Move store to kitchen with Stock transfer.
+3. Sell food on POS (recipe usage where configured).
+4. Check Stock Summary report.
+5. Do physical count and adjust difference.
+Part S — Settings → Database
+Open Settings → tab Database. Use carefully. Wrong clean or import can remove live data.
+S1. Export
+1. Open Export.
+2. Export catalog or data package you need.
+3. Save file in a safe folder.
+4. Export before big changes.
+S2. Import
+1. Open Import.
+2. Choose the file given by Admin or Isarva.
+3. Confirm import.
+4. Check menu and stock after import.
+S3. Backup
+1. Open Backup.
+2. Take backup before major setup change.
+3. Store backup safely.
+4. Restore only with guidance if something goes wrong.
+S4. Data Cleaning
+1. Use only on demo or training data, or with Isarva support.
+2. Never clean live shop data by mistake.
+
+=== PAGE 19 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 19
+Part T — Reports module (complete list)
+Where: Menu → Reports
+1. Open Reports.
+2. Select the report name.
+3. Set date range and branch.
+4. Tap View.
+5. Export or print if the button is shown.
+Sales and profit reports
+1. P&L — Sales, cost, expenses, and net for the period.
+2. Sales Summary — Day or period sales totals.
+3. Hourly sales — Which hour is busy.
+4. Sales by Channel — Dine-in, takeaway, delivery, online, and so on.
+5. Sales by Item — Top selling dishes.
+6. Payments Received — Cash vs card vs other tenders.
+Control and audit reports
+7. Void audit — Who voided what, with reason.
+8. Discount report (also in Back Office) — Discounts given.
+9. Food-cost variance — Menu vs recipe and stock cost.
+Stock and purchase reports
+10. Stock Summary — On-hand quantity and value.
+11. Stock Summary Log — Stock movement history.
+12. Purchase Order Log — PO status and value.
+Simple report routine
+1. Every morning: yesterday Sales Summary + Payments Received.
+2. Every week: Sales by Item + Void audit.
+3. Every week: Stock Summary + PO Log.
+4. Every month: P&L + Expenses.
+Part U — Other daily modules (short guide)
+U1. Home
+1. See today’s snapshot and shortcuts.
+2. Open any module tile you need.
+U2. Dine-in / Floor
+1. Manage tables and dine-in orders (see Part D).
+U3. Payments / Unsettled
+1. Open unpaid tickets.
+2. Settle remaining bills.
+U4. Takeaway / Drive-thru / Quick Serve / Barcode
+1. Takeaway — parcel orders.
+2. Drive-thru — car pickup flow.
+
+=== PAGE 20 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 20
+3. Quick Serve — fast counter.
+4. Barcode — scan or type code and settle quickly.
+U5. Delivery / Online / Courier
+1. Delivery — own delivery and rider assign.
+2. Online — aggregator and web orders; QR menu link for guests.
+3. Courier — platform courier pickup board if you use it.
+U6. Kitchen (KDS)
+1. See Part H for bump and stations.
+U7. Masters
+1. Main place for categories and dishes (also linked with Products settings).
+U8. Back Office
+1. Day overview, sales ledger, day close, shift, time clock, void and discount reports, roles overview.
+Part V — Full setup order checklist (recommended)
+Do in this order for a new restaurant:
+1. Activate POS + Admin login
+2. Company Details + Branches
+3. Tax + Units + Departments
+4. Categories + Menu items + Addons attached
+5. Extra charges + Payment types
+6. Floor areas + Tables
+7. Printers + Printer mapping + test print
+8. Users + Roles + PIN
+9. Ingredients + Recipes (if you track food cost)
+10. Storage locations + Vendors + PO + Receiving
+11. Delivery APIs + Riders (if needed)
+12. SoftPOS card terminal (if needed)
+13. Gift cards / vouchers / loyalty (if needed)
+14. ZATCA details (KSA)
+15. Database backup / export
+16. Full test: order → kitchen → pay → one report
+Part W — Common problems (all modules)
+Problem
+What you can do
+Addon not showing on order
+Attach addon to dish in Masters / Addons.
+Discount buttons missing
+Admin: Settings → Discount; then reopen table.
+Extra charges missing on floor
+Admin: Settings → Extra Charges, set Active.
+Tax looks wrong on bill
+Admin: Settings → Tax / Menu details; do not type tax on floor.
+Change Table / Merge not visible
+Your role needs Change Table permission.
+Split / Settle not visible
+Your role needs Settle permission (Cashier/Admin).
+Confirm split is grey
+Remaining is not 0 - add more payment.
+
+=== PAGE 21 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 21
+Problem
+What you can do
+Food voucher not applying
+Create voucher in Settings; enter correct code on Settle.
+KOT on wrong printer
+Fix Printer Mapping.
+Stock not increasing after delivery
+Use Stock receiving (not only create PO).
+Transfer done but qty wrong
+Check from/to location and finish transfer.
+Report empty
+Check date range and branch.
+Staff cannot open Stock
+Give stock right in Role Privilege.
+Card pay always fails
+Check SoftPOS bridge; turn off training simulate for live.
+Online order not coming
+Test Delivery API connection; check credentials.
+Food cost report looks wrong
+Fix recipe quantities and ingredient units.
+Tile says coming later
+Feature not available yet - skip.
+Cannot activate POS
+Check company code and internet; call Isarva.
+Wrong branch orders
+Change branch on top bar, then continue.
+Part X — Daily closing checklist
+1. Settle remaining tables and unsettled payments.
+2. Finish delivery / online orders or hand over properly.
+3. Review Payments Received and Sales Summary.
+4. Day close for the branch (authorised user).
+5. Sign out. Do not leave Admin unlocked overnight.
+Part Y — Security rules for customers
+1. Each staff uses own login.
+2. Lock or sign out when leaving the counter.
+3. Do not share Admin password on WhatsApp groups.
+4. Disable users who left the job the same day.
+5. Do not type card numbers in order notes.
+6. Report strange logins or missing cash to Owner at once.
+Quick start summary (first day)
+1. Open website → Activate POS with company code.
+2. Sign in as Admin.
+3. Company Details and Branches → select branch.
+4. Tax / Departments / Menu / Addons.
+5. Tables + Printers.
+6. Users.
+7. Stock basics (vendors, locations, receiving) if you use inventory.
+8. Test order + payment + open one report.
+9. Start live sales.
+Support
+
+=== PAGE 22 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 22
+For activation code, training, or any module help, contact your Isarva support channel from your onboarding message.
+Keep this guide with the Owner and Admin.
+Document control
+Version
+Date
+Author
+Notes
+1.0
+2026-09-11
+Isarva
+First customer step-by-step guide
+1.1
+2026-09-11
+Isarva
+Added full Settings tabs, printers,
+catalog, ingredients, stock transfer,
+receiving, reports and related
+modules
+1.2
+2026-09-11
+Isarva
+Added Floor ticket guide: Discount,
+Extra charges, Tax/VAT, Save/KOT,
+Change Table, Merge, Split, Settle,
+Food voucher / gift card
+End of ISARVA-CG-001 — Customer User Guide (v1.2)

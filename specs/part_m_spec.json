@@ -1,0 +1,75 @@
+{
+  "part_id": "M",
+  "part_title": "PART M — SETTINGS > PRINTER",
+  "output_dir": "Part M",
+  "slides": [
+    {
+      "step_id": "M1",
+      "filename": "M1 - Receipt Printer.jpg",
+      "heading": "M1 — Receipt Printer",
+      "where": "Location: Settings > Printer > Receipt Printer",
+      "note": "",
+      "steps": [
+        "Open Receipt Printer.",
+        "Select printer or station.",
+        "Set copies and paper width if asked.",
+        "Set header and footer text (shop name, VAT, thank you note).",
+        "Save.",
+        "Print one test receipt after a test bill."
+      ],
+      "target_route": "/settings/printers?focus=receipt",
+      "actions": [],
+      "screen_filename": "M1_receipt_printer_modal.jpg"
+    },
+    {
+      "step_id": "M2",
+      "filename": "M2 - KOT Printer.jpg",
+      "heading": "M2 — KOT Printer",
+      "where": "Location: Settings > Printer > KOT Printer",
+      "note": "",
+      "steps": [
+        "Open KOT Printer.",
+        "Add kitchen print station(s).",
+        "Save.",
+        "Send a test KOT from Dine-in and confirm print in kitchen."
+      ],
+      "target_route": "/settings/printers",
+      "actions": [],
+      "screen_filename": "M2_kot_printer.jpg"
+    },
+    {
+      "step_id": "M3",
+      "filename": "M3 - Printer Mapping.jpg",
+      "heading": "M3 — Printer Mapping",
+      "where": "Location: Settings > Printer > Printer Mapping",
+      "note": "",
+      "steps": [
+        "Open Printer Mapping.",
+        "Map each department or station to the correct KOT printer.",
+        "Example: Hot kitchen > Kitchen printer, Juice > Bar printer.",
+        "Save.",
+        "Wrong mapping means ticket prints in the wrong place."
+      ],
+      "target_route": "/settings/printers",
+      "actions": [],
+      "screen_filename": "M3_printer_mapping.jpg"
+    },
+    {
+      "step_id": "M4",
+      "filename": "M4 - Print designs - templates.jpg",
+      "heading": "M4 — Print designs / templates",
+      "where": "Location: Settings > Printer > Print designs",
+      "note": "",
+      "steps": [
+        "Open print templates.",
+        "Choose receipt or kitchen template style.",
+        "Preview if available.",
+        "Save.",
+        "Do a real test print before busy service."
+      ],
+      "target_route": "/settings/printers",
+      "actions": [],
+      "screen_filename": "M4_print_designs.jpg"
+    }
+  ]
+}

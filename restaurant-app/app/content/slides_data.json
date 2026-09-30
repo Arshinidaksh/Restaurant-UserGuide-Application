@@ -1,0 +1,2055 @@
+{
+  "2.1": {
+    "section": "2.1",
+    "layout": "info",
+    "screen_filename": "",
+    "kicker": "Before You Start",
+    "heading": "What You Need?",
+    "cards": [
+      {
+        "step": "01",
+        "title": "Meta Business Account",
+        "description": "A Meta Business Account with an active WhatsApp Business API (Cloud API) number registered."
+      },
+      {
+        "step": "02",
+        "title": "WhatsApp API Credentials",
+        "description": "Phone Number ID, WABA ID, and Permanent Access Token retrieved from Meta Developer Console."
+      },
+      {
+        "step": "03",
+        "title": "waCRM Access",
+        "description": "waCRM deployed and running, with team members successfully invited and logged in."
+      },
+      {
+        "step": "04",
+        "title": "Webhook Configuration",
+        "description": "Configure the waCRM Webhook callback URL in Meta Developer Console:",
+        "code_pill": "https://your-domain.com/api/whatsapp/webhook"
+      }
+    ]
+  },
+  "2.2": {
+    "section": "2.2",
+    "screen_filename": "2.2-connect-whatsapp.jpg",
+    "kicker": "Before You Start",
+    "heading": "Connect WhatsApp",
+    "body": "Connect your Meta WhatsApp Business Cloud API account to enable seamless bidirectional communication directly within waCRM.",
+    "bullets": [
+      "Navigate to Settings and select WhatsApp Config",
+      "Enter Phone ID, WABA ID & Permanent Access Token",
+      "Create and set your custom Webhook Verify Token",
+      "Click Save Configuration to register and test connection",
+      "Paste Callback URL in Meta Console & verify connection"
+    ],
+    "ending": "",
+    "scrub_rules": [
+      {
+        "name": "Phone Number ID",
+        "bbox": [
+          542,
+          461,
+          1460,
+          490
+        ],
+        "fill": [
+          244,
+          245,
+          247
+        ],
+        "text": "105938472918472",
+        "text_pos": [
+          554,
+          466
+        ],
+        "font_size": 16,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "WhatsApp Business Account ID",
+        "bbox": [
+          542,
+          531,
+          1460,
+          560
+        ],
+        "fill": [
+          244,
+          245,
+          247
+        ],
+        "text": "109283746501928",
+        "text_pos": [
+          554,
+          536
+        ],
+        "font_size": 16,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Permanent Access Token",
+        "bbox": [
+          542,
+          601,
+          1420,
+          630
+        ],
+        "fill": [
+          244,
+          245,
+          247
+        ],
+        "text": "••••••••••••••••••••••••••••••••••••••••••••••••",
+        "text_pos": [
+          554,
+          609
+        ],
+        "font_size": 16,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "User Name (Bottom Left)",
+        "bbox": [
+          18,
+          836,
+          85,
+          852
+        ],
+        "fill": [
+          248,
+          250,
+          252
+        ],
+        "text": "Admin",
+        "text_pos": [
+          20,
+          836
+        ],
+        "font_size": 13,
+        "text_color": [
+          55,
+          65,
+          81
+        ]
+      },
+      {
+        "name": "User Email (Bottom Left)",
+        "bbox": [
+          62,
+          888,
+          175,
+          902
+        ],
+        "fill": [
+          248,
+          250,
+          252
+        ],
+        "text": "admin@company.com",
+        "text_pos": [
+          63,
+          888
+        ],
+        "font_size": 13,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      }
+    ]
+  },
+  "3": {
+    "section": "3",
+    "screen_filename": "3. Settings Module.jpg",
+    "kicker": "",
+    "heading": "Settings Module",
+    "body": "Centralized management hub for configuring your workspace, account security, WhatsApp integration, and team collaboration settings.",
+    "bullets": [
+      "Manage user profiles, credentials and login security",
+      "Configure Meta WhatsApp Cloud API credentials and webhooks",
+      "Submit, synchronize and manage WhatsApp message templates",
+      "Organize customer records using custom tags and fields",
+      "Invite teammates and configure role-based access permissions"
+    ],
+    "ending": "",
+    "scrub_rules": [
+      {
+        "name": "Profile Card Email",
+        "bbox": [
+          435,
+          206,
+          560,
+          224
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "admin@company.com",
+        "text_pos": [
+          437,
+          207
+        ],
+        "font_size": 13,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      }
+    ]
+  },
+  "3.1": {
+    "section": "3.1",
+    "screen_filename": "3.1 Profile.jpg",
+    "kicker": "Settings Module",
+    "heading": "3.1 Profile",
+    "body": "Manage your personal profile details, account credentials, and active device sessions securely within waCRM.",
+    "bullets": [
+      "Update your display name, email address and profile avatar",
+      "Change account password to maintain system security",
+      "View active sessions, device locations and IP addresses",
+      "Terminate unrecognized or inactive device sessions remotely",
+      "Review account details, assigned workspace role and join date"
+    ],
+    "ending": "",
+    "scrub_rules": [
+      {
+        "name": "Email Input Field",
+        "bbox": [
+          385,
+          454,
+          1030,
+          480
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "admin@company.com",
+        "text_pos": [
+          392,
+          459
+        ],
+        "font_size": 13,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "User ID UUID",
+        "bbox": [
+          390,
+          627,
+          650,
+          640
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "usr_94b8e21a_406f_81d9",
+        "text_pos": [
+          392,
+          628
+        ],
+        "font_size": 11,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      }
+    ]
+  },
+  "3.2": {
+    "section": "3.2",
+    "screen_filename": "2.2-connect-whatsapp.jpg",
+    "kicker": "Settings Module",
+    "heading": "3.2 WhatsApp Config",
+    "body": "Configure Meta WhatsApp Cloud API credentials, webhook verification, and optional Catalog ID directly within waCRM.",
+    "bullets": [
+      "Connect Meta Cloud API via Phone ID and WABA ID",
+      "Provide Permanent Access Token for secure authorization",
+      "Set custom Webhook Verify Token and register endpoint",
+      "Optionally configure Meta Catalog ID for product messages",
+      "Test and verify live connection to activate Inbox messaging"
+    ],
+    "ending": "",
+    "scrub_rules": [
+      {
+        "name": "Phone Number ID",
+        "bbox": [
+          542,
+          461,
+          1460,
+          490
+        ],
+        "fill": [
+          244,
+          245,
+          247
+        ],
+        "text": "105938472918472",
+        "text_pos": [
+          554,
+          466
+        ],
+        "font_size": 16,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "WhatsApp Business Account ID",
+        "bbox": [
+          542,
+          531,
+          1460,
+          560
+        ],
+        "fill": [
+          244,
+          245,
+          247
+        ],
+        "text": "109283746501928",
+        "text_pos": [
+          554,
+          536
+        ],
+        "font_size": 16,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Permanent Access Token",
+        "bbox": [
+          542,
+          601,
+          1420,
+          630
+        ],
+        "fill": [
+          244,
+          245,
+          247
+        ],
+        "text": "••••••••••••••••••••••••••••••••••••••••••••••••",
+        "text_pos": [
+          554,
+          609
+        ],
+        "font_size": 16,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "User Name (Bottom Left)",
+        "bbox": [
+          18,
+          836,
+          85,
+          852
+        ],
+        "fill": [
+          248,
+          250,
+          252
+        ],
+        "text": "Admin",
+        "text_pos": [
+          20,
+          836
+        ],
+        "font_size": 13,
+        "text_color": [
+          55,
+          65,
+          81
+        ]
+      },
+      {
+        "name": "User Email (Bottom Left)",
+        "bbox": [
+          62,
+          888,
+          175,
+          902
+        ],
+        "fill": [
+          248,
+          250,
+          252
+        ],
+        "text": "admin@company.com",
+        "text_pos": [
+          63,
+          888
+        ],
+        "font_size": 13,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      }
+    ]
+  },
+  "3.3": {
+    "section": "3.3",
+    "screen_filename": "3.3 Templates.jpg",
+    "kicker": "Settings Module",
+    "heading": "3.3 Templates",
+    "body": "Create, submit, sync, and manage pre-approved WhatsApp message templates for marketing campaigns and automated customer notifications.",
+    "bullets": [
+      "Create and submit Marketing and Utility templates directly",
+      "Sync approved templates automatically from Meta Manager",
+      "Add rich media headers, dynamic variables, and custom footers",
+      "Configure interactive quick replies and call-to-action buttons",
+      "Track real-time approval status across all template categories"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.4": {
+    "section": "3.4",
+    "screen_filename": "3.4 Tags.jpg",
+    "kicker": "Settings Module",
+    "heading": "3.4 Tags",
+    "body": "Categorize and organize customer contacts using color-coded tags for targeted broadcasts, inbox filtering, and automated chat workflows.",
+    "bullets": [
+      "Create custom color-coded tags for segmented customer grouping",
+      "Filter and search contacts instantly by specific tags in Inbox",
+      "Target precise audience segments for marketing broadcasts",
+      "Apply automated tag assignments via chatbot flow triggers",
+      "Organize service inquiries, sales leads, and VIP client accounts"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.5": {
+    "section": "3.5",
+    "screen_filename": "3.5 Custom Fields.jpg",
+    "kicker": "Settings Module",
+    "heading": "3.5 Custom Fields",
+    "body": "Define custom data attributes for contacts to store business-specific information, personalize message templates, and power automated routing.",
+    "bullets": [
+      "Create custom text fields tailored to your business model",
+      "Populate and update custom field values per contact record",
+      "Personalize WhatsApp message templates with dynamic field tags",
+      "Filter broadcast audiences using custom contact attributes",
+      "Trigger automated workflow rules based on custom field values"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.6": {
+    "section": "3.6",
+    "screen_filename": "3.6 Deals.jpg",
+    "kicker": "Settings Module",
+    "heading": "3.6 Deals & Currency",
+    "body": "Configure your workspace default currency to unify sales pipeline metrics, track deal values, and aggregate revenue dashboards.",
+    "bullets": [
+      "Select default currency for all new deals and transactions",
+      "Display consolidated revenue totals across sales dashboards",
+      "Preserve original currency values for pre-existing deals",
+      "Support major global currencies including USD, INR, and EUR",
+      "Seamlessly integrate currency tracking across pipeline stages"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.7": {
+    "section": "3.7",
+    "screen_filename": "3.7 Appearance.jpg",
+    "kicker": "Settings Module",
+    "heading": "Appearance",
+    "body": "Personalize your waCRM workspace interface with customizable dark and light display modes and vibrant brand accent palettes.",
+    "bullets": [
+      "Toggle effortlessly between Light and Dark display modes",
+      "Choose from 6 curated UI accent colors to match your brand",
+      "Preview interface color changes instantly in real-time",
+      "Save preferences locally per device for comfortable viewing",
+      "Enhance user comfort during prolonged inbox and chat work"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.8": {
+    "section": "3.8",
+    "screen_filename": "3.8 Members.jpg",
+    "kicker": "Settings Module",
+    "heading": "Members",
+    "body": "Invite teammates, assign granular access roles, and monitor real-time agent presence across your workspace.",
+    "bullets": [
+      "Invite teammates seamlessly via direct invite links or email",
+      "Assign granular roles: Owner, Admin, Agent, and Viewer",
+      "Control permissions for settings, templates, inbox, and deals",
+      "Monitor live agent availability with colored presence indicators",
+      "Manage invitations and secure workspace access effortlessly"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.9": {
+    "section": "3.9",
+    "screen_filename": "3.9 API Keys.jpg",
+    "kicker": "Settings Module",
+    "heading": "API Keys",
+    "body": "Generate and manage secure REST API keys to authenticate external software integrations and automate business workflows.",
+    "bullets": [
+      "Create Bearer authentication keys for public REST API endpoints",
+      "Assign granular scope permissions for messages, contacts, and deals",
+      "Connect external CRMs, websites, and internal backend services",
+      "Monitor API token usage activity, creation dates, and status",
+      "Revoke compromised or obsolete API tokens instantly with one click"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.10": {
+    "section": "3.10",
+    "screen_filename": "3.10 Integrations.jpg",
+    "kicker": "Settings Module",
+    "heading": "Integrations",
+    "body": "Connect external communication channels, third-party commerce platforms, and real-time outbound webhooks to power automated workflows.",
+    "bullets": [
+      "Configure outbound webhooks to stream CRM events to Zapier or Make",
+      "Secure event payloads with cryptographic X-Wacrm-Signature validation",
+      "Connect Instagram Professional accounts to unify DMs and comments",
+      "Manage multi-channel inbox conversations alongside WhatsApp chats",
+      "Integrate commerce platforms like Shopify to trigger order updates"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "3.11": {
+    "section": "3.11",
+    "screen_filename": "3.11 AI.jpg",
+    "kicker": "Settings Module",
+    "heading": "AI",
+    "body": "Empower your workspace with intelligent AI auto-replies and a centralized knowledge base to instantly resolve customer inquiries.",
+    "bullets": [
+      "Deploy AI auto-reply bots across WhatsApp and Instagram",
+      "Draft accurate responses using your knowledge base",
+      "Set custom reply delays to prioritize keyword automations",
+      "Pause auto-replies when human agents take over chats",
+      "Connect leading AI models like Groq, Gemini, and OpenAI"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4": {
+    "section": "4",
+    "screen_filename": "4. WhatsApp Templates - Complete Guide.jpg",
+    "kicker": "",
+    "heading": "WhatsApp Templates",
+    "body": "Create, submit, sync, and manage pre-approved WhatsApp message templates to engage customers outside the 24-hour window.",
+    "bullets": [
+      "Submit Marketing and Utility templates for Meta approval",
+      "Sync approved templates directly from Meta WhatsApp Manager",
+      "Design rich media headers with high-resolution image banners",
+      "Add interactive quick replies and direct call-to-action buttons",
+      "Configure dynamic variable parameters to personalize messages"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4.1": {
+    "section": "4.1",
+    "screen_filename": "4.1 Where to create templates.jpg",
+    "kicker": "WhatsApp Templates",
+    "heading": "Create Templates",
+    "body": "Design and submit WhatsApp message templates directly inside waCRM or synchronize approved templates from Meta WhatsApp Manager.",
+    "bullets": [
+      "Select template category between Marketing and Utility",
+      "Specify exact language codes to align with target audiences",
+      "Draft dynamic body copy with structured variable placeholders",
+      "Preview message layouts in real time on mobile screen mockups",
+      "Submit completed templates directly for fast Meta review"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4.2": {
+    "section": "4.2",
+    "screen_filename": "4.2 Template form fields.jpg",
+    "kicker": "WhatsApp Templates",
+    "heading": "Template Form Fields",
+    "body": "Configure template parameters, dynamic body variables, media headers, and interactive buttons according to Meta specifications.",
+    "bullets": [
+      "Define permanent template names using lowercase characters",
+      "Assign message categories across Marketing and Utility",
+      "Insert numbered variable placeholders without body URLs",
+      "Attach optional rich media headers including images and docs",
+      "Add interactive call-to-action and quick reply button options"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4.3": {
+    "section": "4.3",
+    "screen_filename": "4.3 Using an IMAGE in the header.jpg",
+    "kicker": "WhatsApp Templates",
+    "heading": "Image Headers",
+    "body": "Enhance message engagement by incorporating branded visual headers, promotional banners, and rich media assets into WhatsApp templates.",
+    "bullets": [
+      "Upload high-impact PNG or JPEG images up to 5 MB in size",
+      "Format visual banners at recommended 800 x 418 resolution",
+      "Provide secure public HTTPS URLs for direct media hosting",
+      "Store uploaded header handles automatically for Meta review",
+      "Override template image URLs dynamically per broadcast send"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4.4": {
+    "section": "4.4",
+    "screen_filename": "4.4 Variable rules (avoid rejection).jpg",
+    "kicker": "WhatsApp Templates",
+    "heading": "Variable Rules",
+    "body": "Follow Meta variable formatting standards to ensure rapid template approval and prevent message submission rejections.",
+    "bullets": [
+      "Order variables sequentially starting with {{1}}, {{2}}, and {{3}}",
+      "Include each variable only once in the message body text",
+      "Avoid markdown bold styling and hyperlink URLs around variables",
+      "Provide accurate sample text matching expected variable types",
+      "Place website links inside dedicated URL buttons rather than body"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4.5": {
+    "section": "4.5",
+    "screen_filename": "4.5 Template statuses.jpg",
+    "kicker": "WhatsApp Templates",
+    "heading": "Template Statuses",
+    "body": "Monitor real-time WhatsApp template approval lifecycles across Meta review pipelines to maintain broadcast readiness.",
+    "bullets": [
+      "Track submission reviews across Pending, Approved, and Rejected",
+      "Deploy approved templates instantly across Broadcasts and Inbox",
+      "Identify rejection reasons to correct formatting or variables",
+      "Resubmit updated message templates for expedited Meta review",
+      "Synchronize live status updates directly with Meta WhatsApp Manager"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4.6": {
+    "section": "4.6",
+    "screen_filename": "4.6 Template categories and billing (summary).jpg",
+    "kicker": "WhatsApp Templates",
+    "heading": "Categories & Billing",
+    "body": "Understand Meta conversation-based billing tiers and track template classifications to optimize messaging expenses.",
+    "bullets": [
+      "Distinguish rates across Marketing, Utility, and Authentication",
+      "Leverage lower-cost Utility templates for post-purchase alerts",
+      "Monitor Meta category reclassifications directly within waCRM",
+      "Track daily messaging tier limits and recipient quotas easily",
+      "Synchronize approved template categories with Meta Manager"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "4.7": {
+    "section": "4.7",
+    "layout": "info",
+    "style": "board",
+    "theme_color": "blue",
+    "screen_filename": "",
+    "kicker": "WHATSAPP TEMPLATES",
+    "heading": "Template Header Media Limits",
+    "subheading": "Meta file format specifications, upload size constraints, and recommended resolutions for template headers:",
+    "items": [
+      {
+        "title": "Image Header",
+        "tag": "≤ 5 MB LIMIT",
+        "badge_bg": [
+          243,
+          248,
+          255,
+          255
+        ],
+        "badge_col": [
+          18,
+          113,
+          208,
+          255
+        ],
+        "card_bg": [
+          247,
+          250,
+          254,
+          255
+        ],
+        "card_bd": [
+          210,
+          228,
+          250,
+          255
+        ],
+        "description": "Supported formats: PNG, JPEG, WebP. Maximum file size: ≤ 5 MB.\nRecommended dimensions: ~800 × 418 px (1.91:1 ratio). Ideal for campaign banners, discounts, and product promos.",
+        "highlight": "Size: ≤ 5 MB  |  ~800×418 px"
+      },
+      {
+        "title": "Video Header",
+        "tag": "≤ 16 MB LIMIT",
+        "badge_bg": [
+          255,
+          246,
+          243,
+          255
+        ],
+        "badge_col": [
+          255,
+          92,
+          53,
+          255
+        ],
+        "card_bg": [
+          255,
+          249,
+          247,
+          255
+        ],
+        "card_bd": [
+          255,
+          222,
+          212,
+          255
+        ],
+        "description": "Supported format: MP4 container with H.264 video and AAC audio encoding.\nMaximum file size: ≤ 16 MB. Maximum duration: ≤ 60 seconds. First frame auto-renders as recipient thumbnail.",
+        "highlight": "Size: ≤ 16 MB  |  ≤ 60 Seconds"
+      },
+      {
+        "title": "Document Header",
+        "tag": "≤ 100 MB LIMIT",
+        "badge_bg": [
+          238,
+          250,
+          243,
+          255
+        ],
+        "badge_col": [
+          3,
+          142,
+          65,
+          255
+        ],
+        "card_bg": [
+          248,
+          252,
+          249,
+          255
+        ],
+        "card_bd": [
+          205,
+          235,
+          218,
+          255
+        ],
+        "description": "Supported format: PDF document format with full multi-page support.\nMaximum file size: ≤ 100 MB. Ideal for sending invoices, price quotes, contracts, and downloadable product brochures.",
+        "highlight": "Size: ≤ 100 MB  |  PDF Documents"
+      }
+    ],
+    "tip_note": "Meta reviews template header media during submission. For dynamic broadcasts, you can override the media URL per recipient."
+  },
+  "5": {
+    "section": "5",
+    "layout": "info",
+    "style": "board",
+    "screen_filename": "",
+    "kicker": "PRICING & COMPLIANCE",
+    "heading": "Meta WhatsApp Costs - When You Pay and When You Do Not",
+    "banner": {
+      "label": "*Disclaimer:**",
+      "text": "Meta changes pricing by country and over time. Always check the official page:",
+      "link": "https://developers.facebook.com/docs/whatsapp/pricing",
+      "note": "Below is a practical guide for planning, not a legal quote."
+    },
+    "cards": [
+      {
+        "step": "01",
+        "title": "Service Window (Free / Low)",
+        "description": "Replies within the 24-hour customer window are service conversations with lowest cost or free tiers."
+      },
+      {
+        "step": "02",
+        "title": "Business Initiated (Paid)",
+        "description": "Starting a chat or messaging outside 24 hours requires an approved template and incurs Meta fees."
+      },
+      {
+        "step": "03",
+        "title": "Category Billing Rates",
+        "description": "Marketing has the highest rate, Utility has medium, and Authentication has the lowest rate."
+      }
+    ]
+  },
+  "5.1": {
+    "section": "5.1",
+    "layout": "info",
+    "style": "board",
+    "theme_color": "green",
+    "screen_filename": "",
+    "kicker": "PRICING & BILLING",
+    "heading": "You are generally NOT charged when:",
+    "subheading": "Understanding non-billable customer care windows, service messages, and internal CRM activities:",
+    "items": [
+      {
+        "title": "Reply Inside 24-Hour Window",
+        "description": "You reply inside the 24-hour customer window after they messaged you (service conversation)."
+      },
+      {
+        "title": "Customer Opens Service Window",
+        "description": "The customer initiates contact and opens a service window, and you respond with free text replies."
+      },
+      {
+        "title": "Meta Free Tier Allowance",
+        "description": "Meta provides monthly free tier service conversations (country-specific allowances apply)."
+      },
+      {
+        "title": "Message Delivery Failures",
+        "description": "A message fails to deliver to the recipient (undelivered template attempts are not billed)."
+      },
+      {
+        "title": "Draft Broadcast Campaigns",
+        "description": "You save, edit, and configure draft broadcasts in waCRM without actually launching or sending them."
+      },
+      {
+        "title": "Non-Messaging waCRM Features",
+        "description": "You manage sales pipelines, assign tags, update custom fields, and write internal notes."
+      }
+    ],
+    "tip_note": "waCRM Tip: Inbound customer conversations automatically reset the 24-hour service window timer."
+  },
+  "5.2": {
+    "section": "5.2",
+    "layout": "info",
+    "style": "board",
+    "theme_color": "orange",
+    "screen_filename": "",
+    "kicker": "PRICING & BILLING",
+    "heading": "You ARE charged (Meta conversation fee) when:",
+    "subheading": "Understanding Meta conversation charges, billable events, and template fees:",
+    "items": [
+      {
+        "title": "Approved Template Start / Re-open",
+        "description": "You send an approved template to start a new chat or re-open a business-initiated conversation."
+      },
+      {
+        "title": "Broadcast Campaigns",
+        "description": "You send a broadcast campaign using a Marketing or Utility template to opted-in contacts."
+      },
+      {
+        "title": "Template Category Rates",
+        "description": "The category assigned dictates billing (Marketing costs more than Utility in most regions)."
+      },
+      {
+        "title": "Messaging Outside 24h Window",
+        "description": "You message a user outside the 24-hour window, requiring a paid template conversation."
+      }
+    ],
+    "tip_note": "waCRM Tip: Meta conversation charges cover unlimited messages within that 24-hour category window."
+  },
+  "5.3": {
+    "section": "5.3",
+    "layout": "info",
+    "style": "board",
+    "theme_color": "blue",
+    "screen_filename": "",
+    "kicker": "PRICING & BILLING",
+    "heading": "How Category Changes the Cost",
+    "subheading": "Illustrative baseline rates for planning (check Meta's calculator for live country pricing):",
+    "rate_cards": [
+      {
+        "title": "Marketing",
+        "rate": "~ $0.010 / conv",
+        "badge": "Highest Cost",
+        "color": "orange"
+      },
+      {
+        "title": "Utility",
+        "rate": "~ $0.005 / conv",
+        "badge": "Medium Cost",
+        "color": "blue"
+      },
+      {
+        "title": "Service (24h)",
+        "rate": "$0.000 - $0.002",
+        "badge": "Lowest / Free Tier",
+        "color": "green"
+      }
+    ],
+    "table": {
+      "columns": [
+        "Action Scenario",
+        "Category",
+        "Approx. Charge per User"
+      ],
+      "rows": [
+        {
+          "action": "Send \"Request Demo for HRMS\" promo template",
+          "category": "Marketing",
+          "category_color": "orange",
+          "charge": "Higher (Standard Marketing Rate)"
+        },
+        {
+          "action": "Send \"Your demo is confirmed for tomorrow 3 PM\"",
+          "category": "Utility",
+          "category_color": "blue",
+          "charge": "Lower (Standard Utility Rate)"
+        },
+        {
+          "action": "Customer asks \"What is the price?\" and you reply within 24h",
+          "category": "Service",
+          "category_color": "green",
+          "charge": "Lowest (Free tier / Low Service Rate)"
+        },
+        {
+          "action": "Send 1,000 marketing broadcasts to 1,000 users",
+          "category": "Marketing × 1000",
+          "category_color": "orange",
+          "charge": "Up to 1,000 conversations billed"
+        }
+      ]
+    },
+    "tip_note": "One broadcast to 1,000 people ~ up to 1,000 billable conversations if each opens a new 24h window. Meta charges per window, not per waCRM message."
+  },
+  "5.4": {
+    "section": "5.4",
+    "layout": "info",
+    "style": "board",
+    "theme_color": "blue",
+    "screen_filename": "",
+    "kicker": "PRICING & COMPLIANCE",
+    "heading": "What waCRM Shows Instead of Dollar Costs",
+    "subheading": "In Broadcasts -> Step 4, waCRM tracks operational safety metrics, recipient quotas, and Meta account health:",
+    "items": [
+      {
+        "title": "Estimated Recipients",
+        "description": "Calculates reachable contact counts after applying customer opt-in verification and audience tag filters.",
+        "tag": "Audience Sizing"
+      },
+      {
+        "title": "Messaging Limit Tier",
+        "description": "Displays your active daily recipient allowance: 250, 1K, 10K, or 100K unique customer conversations per 24 hours.",
+        "tag": "Daily Quota"
+      },
+      {
+        "title": "Account Quality Rating",
+        "description": "Monitors real-time Meta phone number health status (Green High / Yellow Medium / Red Low) based on recipient feedback.",
+        "tag": "Health Status"
+      },
+      {
+        "title": "Compliance & Tier Warnings",
+        "description": "Flags pre-send warnings if your selected audience exceeds your daily tier quota or includes unverified contacts.",
+        "tag": "Send Guardrails"
+      }
+    ],
+    "tip_note": "waCRM Tip: High quality ratings enable Meta to automatically increase your messaging tier from 1K up to 100K recipients per day."
+  },
+  "5.5": {
+    "section": "5.5",
+    "layout": "info",
+    "style": "board",
+    "theme_color": "green",
+    "screen_filename": "",
+    "kicker": "PRICING & COMPLIANCE",
+    "heading": "Opt-in and Compliance (Avoids Wasted Sends)",
+    "subheading": "Protect sender reputation, maintain high Meta quality ratings, and avoid costly wasted broadcast spend:",
+    "items": [
+      {
+        "title": "Enable \"Only Opted-in Contacts\"",
+        "tag": "RECOMMENDED",
+        "description": "Activate in Broadcasts Step 2 to strictly restrict broadcasts to contacts with verified consent.\nEliminates wasted messaging spend and prevents user spam complaints before sending.",
+        "highlight": "Wizard Step 2: \"Only Opted-in\" = ON"
+      },
+      {
+        "title": "Contact opt_in_at Timestamp",
+        "tag": "DATA ATTRIBUTE",
+        "description": "Contacts require an opt_in_at timestamp recorded in waCRM to qualify for broadcasts.\nPopulated automatically via inbound webhooks, opt-in forms, CSV imports, or manual updates.",
+        "highlight": "Field: contacts.opt_in_at (ISO 8601)"
+      },
+      {
+        "title": "Prevent Quality Downgrades & Bans",
+        "tag": "META POLICY RISK",
+        "description": "Sending to unconsented users triggers spam reports and drops your rating from Green to Red.\nWhile not a direct per-message fine, repeated policy infractions lead Meta to permanently ban your number.",
+        "highlight": "Critical: Avoids Meta Number Ban"
+      }
+    ],
+    "tip_note": "Meta evaluates block and report rates in real time. Maintaining documented customer opt-in protects your business sender reputation."
+  },
+  "6.1.1": {
+    "section": "6.1.1",
+    "screen_filename": "6. Broadcasts Module/Step 1 - Choose Template.jpg",
+    "kicker": "Broadcasts Module",
+    "heading": "Choose Template",
+    "body": "Select an approved WhatsApp message template from your library to initiate targeted marketing broadcasts and customer updates.",
+    "bullets": [
+      "Display only pre-approved Meta message templates",
+      "Review category badges to assess conversation costs",
+      "Select targeted templates for marketing campaigns",
+      "Inspect message layout and interactive call actions",
+      "Check broadcast quota and daily recipient limits"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "6.1.2": {
+    "section": "6.1.2",
+    "screen_filename": "6. Broadcasts Module/Step 2 - Select Audience.jpg",
+    "kicker": "Broadcasts Module",
+    "heading": "Select Audience",
+    "body": "Segment target recipients using tags, custom contact attributes, or external CSV lists while enforcing verified opt-in compliance.",
+    "bullets": [
+      "Target entire database or filter contacts by tags",
+      "Filter recipients by custom fields like city or role",
+      "Upload external phone lists directly via CSV file",
+      "Send only to opted-in users to protect sender score",
+      "Exclude specific tags and preview recipient counts"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "6.1.3": {
+    "section": "6.1.3",
+    "screen_filename": "6. Broadcasts Module/Step 3 - Personalize.jpg",
+    "kicker": "Broadcasts Module",
+    "heading": "Personalize",
+    "body": "Map template variables to contact attributes, custom fields, or static text values to deliver relevant individual messages at scale.",
+    "bullets": [
+      "Map body variables to dynamic contact name fields",
+      "Insert custom attributes like city for local context",
+      "Apply static text values consistently across all sends",
+      "Set dynamic URL button suffixes for custom links",
+      "Replace header banner image URLs per broadcast"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "6.1.4": {
+    "section": "6.1.4",
+    "screen_filename": "6. Broadcasts Module/Step 4 - Schedule & Send.jpg",
+    "kicker": "Broadcasts Module",
+    "heading": "Schedule & Send",
+    "body": "Finalize broadcast settings, configure link click tracking, schedule delivery dates, and review preflight safety checks.",
+    "bullets": [
+      "Assign internal broadcast names for easy tracking",
+      "Enable link click tracking on approved URL buttons",
+      "Choose instant delivery or schedule for a future date",
+      "Configure recurring daily or weekday broadcast sends",
+      "Review preflight warnings for opt-in and quota limits"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "7.2": {
+    "section": "7.2",
+    "screen_filename": "7. Pipelines Module/7.2 Create a deal.jpg",
+    "crop_align": "right",
+    "kicker": "Pipelines Module",
+    "heading": "Create a Deal",
+    "body": "Create and track sales opportunities across customized pipeline stages with full visibility into deal values and expected closing dates.",
+    "bullets": [
+      "Add new deals directly from any pipeline stage column",
+      "Link deals directly to active WhatsApp contacts",
+      "Define deal value, currency, and expected close dates",
+      "Assign team members and log important deal notes",
+      "Drag and drop cards seamlessly between sales stages"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "7.3": {
+    "section": "7.3",
+    "screen_filename": "7. Pipelines Module/7.3 Mark Won or Lost.jpg",
+    "crop_align": "right",
+    "kicker": "Pipelines Module",
+    "heading": "Mark Won or Lost",
+    "body": "Update deal progression with one-click status actions to record final outcomes, calculate conversion rates, and keep sales pipelines accurate.",
+    "bullets": [
+      "Mark opportunities as Won or Lost with one click",
+      "Record closed outcomes to update revenue metrics",
+      "Track conversion rates across each sales stage",
+      "Update contact status automatically upon closing",
+      "Archive finished deals while keeping complete history"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "8.1": {
+    "section": "8.1",
+    "screen_filename": "8. Automations Module/8.1 Triggers.jpg",
+    "crop_align": "center",
+    "kicker": "Automations Module",
+    "heading": "Triggers",
+    "body": "Initiate automated workflows instantly whenever predefined customer events, message contents, or schedule conditions occur.",
+    "bullets": [
+      "Fire rules on any inbound message or first contact",
+      "Match keywords like demo or pricing automatically",
+      "Trigger actions when contacts or tags are added",
+      "Automate routing on agent assignments and calls",
+      "Execute scheduled jobs using time-based cron rules"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "9": {
+    "section": "9",
+    "screen_filename": "9. Flows Module.jpg",
+    "kicker": "",
+    "heading": "Flows Module",
+    "body": "Design interactive, button-driven WhatsApp chatbots to guide customer inquiries, collect lead details, and automate triage before human handoff.",
+    "bullets": [
+      "Build branching chatbots with buttons and list menus",
+      "Trigger flows on inbound keywords or first messages",
+      "Collect user inputs and store values in variables",
+      "Fetch live external API data using HTTP fetch nodes",
+      "Handoff qualified leads directly to human sales reps"
+    ],
+    "ending": "",
+    "scrub_rules": []
+  },
+  "13": {
+    "section": "13",
+    "layout": "info",
+    "style": "board",
+    "theme_color": "blue",
+    "screen_filename": "",
+    "kicker": "DOCUMENTATION & RESOURCES",
+    "heading": "Support & Further Reading",
+    "subheading": "Essential developer documentation, official Meta API guidelines, and technical integration manuals:",
+    "items": [
+      {
+        "title": "Meta WhatsApp Pricing",
+        "tag": "OFFICIAL DOCS",
+        "icon": "brand_icon_meta.png",
+        "card_bg": [
+          246,
+          250,
+          255,
+          255
+        ],
+        "card_bd": [
+          205,
+          225,
+          250,
+          255
+        ],
+        "badge_bg": [
+          235,
+          244,
+          255,
+          255
+        ],
+        "badge_col": [
+          18,
+          113,
+          208,
+          255
+        ],
+        "description": "Official Meta conversation rate cards, 24-hour service window rules, and country-specific pricing calculators.",
+        "link": "https://developers.facebook.com/docs/whatsapp/pricing"
+      },
+      {
+        "title": "waCRM Public API",
+        "tag": "REST API SPEC",
+        "icon": "brand_icon_key.png",
+        "card_bg": [
+          246,
+          252,
+          248,
+          255
+        ],
+        "card_bd": [
+          200,
+          235,
+          215,
+          255
+        ],
+        "badge_bg": [
+          236,
+          250,
+          242,
+          255
+        ],
+        "badge_col": [
+          3,
+          142,
+          65,
+          255
+        ],
+        "description": "Complete endpoint references for contact management, pipeline deals, broadcast triggers, and webhook event schemas.",
+        "link": "docs/public-api.md"
+      },
+      {
+        "title": "Meta Template Guidelines",
+        "tag": "API POLICIES",
+        "icon": "brand_icon_meta.png",
+        "card_bg": [
+          246,
+          250,
+          255,
+          255
+        ],
+        "card_bd": [
+          205,
+          225,
+          250,
+          255
+        ],
+        "badge_bg": [
+          235,
+          244,
+          255,
+          255
+        ],
+        "badge_col": [
+          18,
+          113,
+          208,
+          255
+        ],
+        "description": "Submission criteria, variable parameter formatting rules, and content quality standards to avoid template rejection.",
+        "link": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates"
+      },
+      {
+        "title": "Technical Integration Guide",
+        "tag": "ARCHITECTURE",
+        "icon": "brand_icon_webhook.png",
+        "card_bg": [
+          255,
+          249,
+          247,
+          255
+        ],
+        "card_bd": [
+          255,
+          222,
+          212,
+          255
+        ],
+        "badge_bg": [
+          255,
+          244,
+          240,
+          255
+        ],
+        "badge_col": [
+          255,
+          92,
+          53,
+          255
+        ],
+        "description": "In-depth architecture manual covering Cloud API setup, signature verification, payload structures, and troubleshooting.",
+        "link": "docs/whatsapp-integration-guide.html"
+      }
+    ],
+    "tip_note": "waCRM Tip: For webhook signature verification and production troubleshooting, refer to docs/whatsapp-integration-guide.html."
+  },
+  "10": {
+    "section": "10",
+    "screen_filename": "10.Inbox.jpg",
+    "kicker": "",
+    "heading": "Inbox",
+    "body": "Reply to customer WhatsApp chats in real time, assign conversations to teammates, send approved templates, and manage contact details seamlessly.",
+    "bullets": [
+      "Organize chats across All, Unread, Mine, and Replied tabs",
+      "Send freeform replies within the 24-hour customer window",
+      "Dispatch Meta-approved message templates with variables",
+      "Assign chats to teammates and update deal stages directly",
+      "View contact details, tags, custom fields, and notes instantly"
+    ],
+    "ending": "",
+    "crop_align": "left",
+    "scrub_rules": [
+      {
+        "name": "Header Contact Name",
+        "bbox": [
+          440,
+          68,
+          550,
+          92
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Rajesh Sharma",
+        "text_pos": [
+          440,
+          68
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Header Phone Number",
+        "bbox": [
+          440,
+          93,
+          560,
+          112
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "+91 98201 45821",
+        "text_pos": [
+          440,
+          93
+        ],
+        "font_size": 12,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      },
+      {
+        "name": "Header Avatar Letter",
+        "bbox": [
+          425,
+          78,
+          440,
+          96
+        ],
+        "fill": [
+          243,
+          244,
+          246
+        ],
+        "text": "R",
+        "text_pos": [
+          427,
+          79
+        ],
+        "font_size": 14,
+        "text_color": [
+          55,
+          65,
+          81
+        ]
+      },
+      {
+        "name": "Chat List Item 1 Name",
+        "bbox": [
+          148,
+          238,
+          220,
+          256
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Harpreet Singh",
+        "text_pos": [
+          149,
+          238
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Chat List Item 3 Active Name",
+        "bbox": [
+          148,
+          380,
+          260,
+          398
+        ],
+        "fill": [
+          236,
+          253,
+          245
+        ],
+        "text": "Rajesh Sharma",
+        "text_pos": [
+          149,
+          380
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Chat List Item 3 Subline",
+        "bbox": [
+          186,
+          404,
+          240,
+          421
+        ],
+        "fill": [
+          236,
+          253,
+          245
+        ],
+        "text": "Rajesh",
+        "text_pos": [
+          187,
+          404
+        ],
+        "font_size": 12,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      },
+      {
+        "name": "Chat List Item 3 Avatar Letter",
+        "bbox": [
+          110,
+          390,
+          122,
+          405
+        ],
+        "fill": [
+          243,
+          244,
+          246
+        ],
+        "text": "R",
+        "text_pos": [
+          112,
+          390
+        ],
+        "font_size": 14,
+        "text_color": [
+          55,
+          65,
+          81
+        ]
+      },
+      {
+        "name": "Chat List Item 4 Phone Title",
+        "bbox": [
+          148,
+          450,
+          310,
+          468
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "+91 98450 12894",
+        "text_pos": [
+          149,
+          450
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Chat List Item 4 Subline",
+        "bbox": [
+          186,
+          474,
+          240,
+          492
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Suresh",
+        "text_pos": [
+          187,
+          474
+        ],
+        "font_size": 12,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      },
+      {
+        "name": "Chat List Item 5 Name",
+        "bbox": [
+          148,
+          520,
+          260,
+          538
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Deepak Sharma",
+        "text_pos": [
+          149,
+          520
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Chat List Item 5 Subline",
+        "bbox": [
+          186,
+          545,
+          235,
+          563
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Deepak",
+        "text_pos": [
+          187,
+          545
+        ],
+        "font_size": 12,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      },
+      {
+        "name": "Chat List Item 6 Name",
+        "bbox": [
+          148,
+          592,
+          240,
+          610
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Swathi Menon",
+        "text_pos": [
+          149,
+          592
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Chat List Item 8 Name",
+        "bbox": [
+          148,
+          734,
+          365,
+          752
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Sharma Enterprises Pvt Ltd",
+        "text_pos": [
+          149,
+          734
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Chat List Item 9 Name",
+        "bbox": [
+          148,
+          804,
+          250,
+          825
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Akash Kulal",
+        "text_pos": [
+          149,
+          804
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Chat List Item 10 Name",
+        "bbox": [
+          148,
+          875,
+          240,
+          895
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Kailash Verma",
+        "text_pos": [
+          149,
+          875
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Right Panel Contact Name",
+        "bbox": [
+          1730,
+          122,
+          1830,
+          140
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Rajesh Sharma",
+        "text_pos": [
+          1731,
+          122
+        ],
+        "font_size": 14,
+        "text_color": [
+          17,
+          24,
+          39
+        ]
+      },
+      {
+        "name": "Right Panel Phone Number",
+        "bbox": [
+          1730,
+          147,
+          1830,
+          163
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "+91 98201 45821",
+        "text_pos": [
+          1731,
+          147
+        ],
+        "font_size": 12,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      },
+      {
+        "name": "Right Panel Company Name",
+        "bbox": [
+          1733,
+          166,
+          1890,
+          183
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Sharma Enterprises",
+        "text_pos": [
+          1734,
+          166
+        ],
+        "font_size": 12,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      },
+      {
+        "name": "Right Panel Avatar Letter",
+        "bbox": [
+          1688,
+          143,
+          1702,
+          159
+        ],
+        "fill": [
+          243,
+          244,
+          246
+        ],
+        "text": "R",
+        "text_pos": [
+          1690,
+          143
+        ],
+        "font_size": 14,
+        "text_color": [
+          55,
+          65,
+          81
+        ]
+      },
+      {
+        "name": "Right Panel Info Company",
+        "bbox": [
+          1733,
+          608,
+          1880,
+          622
+        ],
+        "fill": [
+          255,
+          255,
+          255
+        ],
+        "text": "Sharma Enterprises",
+        "text_pos": [
+          1734,
+          608
+        ],
+        "font_size": 12,
+        "text_color": [
+          107,
+          114,
+          128
+        ]
+      },
+      {
+        "name": "Chat Bubble Greeting Name",
+        "bbox": [
+          1370,
+          398,
+          1422,
+          412
+        ],
+        "fill": [
+          0,
+          162,
+          103
+        ],
+        "text": "Rajesh",
+        "text_pos": [
+          1371,
+          398
+        ],
+        "font_size": 13,
+        "text_color": [
+          10,
+          50,
+          20
+        ]
+      },
+      {
+        "name": "Chat Bubble Website Domain",
+        "bbox": [
+          1436,
+          438,
+          1612,
+          460
+        ],
+        "fill": [
+          0,
+          162,
+          103
+        ],
+        "text": "sharma-enterprises.in",
+        "text_pos": [
+          1437,
+          440
+        ],
+        "font_size": 12,
+        "text_color": [
+          10,
+          50,
+          20
+        ]
+      }
+    ]
+  },
+  "POS-1.0": {
+    "section": "POS-1.0",
+    "layout": "info",
+    "kicker": "CUSTOMER USER GUIDE",
+    "heading": "Isarva Restaurant POS",
+    "subheading": "ISO/IEC 27001:2022 Certified Architecture · Version 1.2 · Complete System Overview",
+    "theme_color": "green",
+    "style": "board",
+    "items": [
+      {
+        "title": "Complete Setup & Activation",
+        "description": "First-time till activation via Company Code, multi-branch configuration, and bilingual EN/AR interface.",
+        "tag": "SETUP"
+      },
+      {
+        "title": "Floor & Dine-In Operations",
+        "description": "Interactive table seating, order tickets, KOT dispatch, item customizers, bill split, table change & merge.",
+        "tag": "FLOOR"
+      },
+      {
+        "title": "Smart Settle & Payment Hub",
+        "description": "Equal & custom split, food vouchers, gift cards, loyalty points, SoftPOS, mada, Apple Pay, STC Pay.",
+        "tag": "PAYMENTS"
+      },
+      {
+        "title": "Kitchen KDS & Delivery",
+        "description": "Multi-station KDS, bump flow, 86 item alerts, delivery aggregator APIs (HungerStation, Jahez, Keeta), and rider app.",
+        "tag": "KITCHEN"
+      },
+      {
+        "title": "Inventory, Recipes & POs",
+        "description": "Yield conversions, recipe food costing, storage transfers, vendor POs, receiving, and Stock Master counts.",
+        "tag": "INVENTORY"
+      },
+      {
+        "title": "ZATCA e-Invoicing & Reports",
+        "description": "KSA ZATCA Phase 2 compliance, sales P&L, void audits, discount logs, and branch-specific Day Close.",
+        "tag": "ZATCA"
+      }
+    ],
+    "tip_note": "Application URL: https://app.restaurant-pos.isarva.in · ISO 27001 compliant restaurant operations."
+  },
+  "POS-2.1": {
+    "section": "POS-2.1",
+    "layout": "info",
+    "kicker": "PART A & B — GETTING STARTED",
+    "heading": "Prerequisites & First-Time Till Setup",
+    "cards": [
+      {
+        "step": "01",
+        "title": "Hardware & Browser",
+        "description": "Computer, laptop or tablet running Google Chrome or Microsoft Edge with stable internet connection."
+      },
+      {
+        "step": "02",
+        "title": "Activate POS",
+        "description": "Navigate to app.restaurant-pos.isarva.in, enter Company Code (min 3 chars), and click Activate POS."
+      },
+      {
+        "step": "03",
+        "title": "Admin Credentials",
+        "description": "Sign in using Admin username and PIN or password to unlock master restaurant controls."
+      },
+      {
+        "step": "04",
+        "title": "Branch & Tax",
+        "description": "Verify company legal name, configure restaurant branches, and set 15% VAT / ZATCA details in Settings."
+      }
+    ]
+  },
+  "POS-3.1": {
+    "section": "POS-3.1",
+    "layout": "info",
+    "kicker": "PART D — FLOOR TICKETS",
+    "heading": "Dine-In Order & Kitchen Flow",
+    "cards": [
+      {
+        "step": "01",
+        "title": "Seat & Add Dishes",
+        "description": "Select guest table from floor map, pick categories, add dishes with custom kitchen preparation notes."
+      },
+      {
+        "step": "02",
+        "title": "Send KOT to Kitchen",
+        "description": "Tap KOT (or KOT & Print) to route items instantly to kitchen display stations and KOT printers."
+      },
+      {
+        "step": "03",
+        "title": "Discounts & Charges",
+        "description": "Apply discount percentage pills (0%, 7%, 10%) or toggle extra charges (service fee, parking) as authorized."
+      },
+      {
+        "step": "04",
+        "title": "Save & Bill Preview",
+        "description": "Tap Save & Bill to generate interim guest check slip for review before proceeding to final settlement."
+      }
+    ]
+  },
+  "POS-4.1": {
+    "section": "POS-4.1",
+    "layout": "info",
+    "kicker": "PART E — SETTLE MODAL",
+    "heading": "Flexible Payment & Split Settlement",
+    "subheading": "Settle Window: Table XX · Real-Time Balance & Multi-Tender Settlement",
+    "theme_color": "blue",
+    "style": "board",
+    "items": [
+      {
+        "title": "One-Touch Fast Settle",
+        "description": "Tap 'Rest -> Cash', 'Rest -> mada', 'Rest -> Apple Pay', or 'Rest -> Visa' to settle entire balance in 1 click.",
+        "tag": "FAST PAY"
+      },
+      {
+        "title": "Equal Split",
+        "description": "Divide ticket evenly across 2, 3, 4+ guests. Collect each portion via individual cash or card transactions.",
+        "tag": "EQUAL"
+      },
+      {
+        "title": "Custom Multi-Tender Split",
+        "description": "Combine tenders seamlessly: e.g. SAR 200 Cash + remaining balance via mada card or STC Pay.",
+        "tag": "CUSTOM"
+      },
+      {
+        "title": "Food Vouchers",
+        "description": "Enter promotional voucher code. System validates eligibility and deducts voucher credit immediately.",
+        "tag": "VOUCHER"
+      },
+      {
+        "title": "Gift Cards & Loyalty",
+        "description": "Redeem stored value gift cards or customer CRM loyalty points directly against amount due.",
+        "tag": "LOYALTY"
+      },
+      {
+        "title": "Integrated SoftPOS",
+        "description": "Hardware bridge communicates directly with payment terminals for secure PIN & contactless processing.",
+        "tag": "TERMINAL"
+      }
+    ],
+    "tip_note": "Confirm pay button unlocks exclusively when Remaining balance reaches exactly SAR 0.00."
+  },
+  "POS-5.1": {
+    "section": "POS-5.1",
+    "layout": "info",
+    "kicker": "PART W — TROUBLESHOOTING",
+    "heading": "Common POS Problems & Solutions",
+    "subheading": "Instant Field Remediation Matrix for Cashiers, Waiters & Admins",
+    "theme_color": "orange",
+    "style": "board",
+    "items": [
+      {
+        "title": "Addon Not Showing",
+        "description": "Cause: Addon group unlinked. Solution: Go to Masters -> Dishes -> attach addon group to target dish.",
+        "tag": "MASTERS"
+      },
+      {
+        "title": "Confirm Split Is Grey",
+        "description": "Cause: Remaining balance > 0. Solution: Check bottom remaining bar; add tender lines until Remaining is SAR 0.00.",
+        "tag": "SETTLE"
+      },
+      {
+        "title": "KOT on Wrong Printer",
+        "description": "Cause: Incorrect station mapping. Solution: Settings -> Printer -> Printer Mapping; reassign departments.",
+        "tag": "PRINTER"
+      },
+      {
+        "title": "Stock Not Increasing",
+        "description": "Cause: Only PO raised. Solution: Open Stock Receiving, enter delivered quantities, and confirm receipt.",
+        "tag": "INVENTORY"
+      },
+      {
+        "title": "Tax Looks Wrong on Bill",
+        "description": "Cause: Tax rate misconfigured. Solution: Admin updates in Settings -> Tax; do not attempt manual tax editing on floor.",
+        "tag": "TAX / VAT"
+      },
+      {
+        "title": "Card Payment Always Fails",
+        "description": "Cause: Bridge disconnected or training mode active. Solution: Verify SoftPOS bridge & turn off simulate mode.",
+        "tag": "SOFTPOS"
+      }
+    ],
+    "tip_note": "For unresolved technical issues, reach out immediately via your dedicated Isarva Support channel."
+  },
+  "POS-6.1": {
+    "section": "POS-6.1",
+    "layout": "info",
+    "kicker": "PART V — IMPLEMENTATION",
+    "heading": "New Restaurant Go-Live Checklist",
+    "cards": [
+      {
+        "step": "01",
+        "title": "Activate & Legal",
+        "description": "Activate POS with Company Code, sign in as Admin, configure Branches, 15% VAT, and ZATCA details."
+      },
+      {
+        "step": "02",
+        "title": "Catalog & Floor",
+        "description": "Create Departments, Categories, Dishes with Addons, Floor Areas (Indoor/Outdoor), and Tables."
+      },
+      {
+        "step": "03",
+        "title": "Hardware & Staff",
+        "description": "Configure Receipt/KOT printers, test printer mapping, create staff accounts with PINs and roles."
+      },
+      {
+        "step": "04",
+        "title": "End-to-End Test",
+        "description": "Run simulated test bill: open table -> send KOT -> apply discount -> settle payment -> verify report."
+      }
+    ]
+  }
+}

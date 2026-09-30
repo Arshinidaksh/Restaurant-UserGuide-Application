@@ -1,0 +1,293 @@
+{
+  "part_id": "L",
+  "part_title": "PART L — SETTINGS > BUSINESS",
+  "output_dir": "Part L",
+  "slides": [
+    {
+      "step_id": "L1",
+      "filename": "L1 - Company Details.jpg",
+      "heading": "L1 — Company Details",
+      "where": "Where: Settings > Company Details",
+      "note": "Do this first after you Activate POS.",
+      "steps": [
+        "Open Company Details.",
+        "Enter restaurant brand name and legal name.",
+        "Enter VAT / tax number and address carefully.",
+        "Add or edit Branches (each outlet).",
+        "Save.",
+        "On the till top bar, select the branch you are working on."
+      ],
+      "target_route": "/settings/company",
+      "actions": [],
+      "screen_filename": "L1_company_details.jpg"
+    },
+    {
+      "step_id": "L2",
+      "filename": "L2 - ZATCA e-invoice setup.jpg",
+      "heading": "L2 — ZATCA e-invoice setup",
+      "where": "Where: Settings > Company Details (ZATCA section)",
+      "note": "",
+      "steps": [
+        "Open company tax / ZATCA area.",
+        "Fill seller details needed for KSA e-invoice.",
+        "For Phase 2 onboarding (OTP, CSID), do only with Isarva support.",
+        "Do not share private keys on WhatsApp or email."
+      ],
+      "target_route": "/settings/company?focus=zatca",
+      "actions": [],
+      "screen_filename": "L2_zatca_setup.jpg"
+    },
+    {
+      "step_id": "L3",
+      "filename": "L3 - ZATCA invoice queue.jpg",
+      "heading": "L3 — ZATCA invoice queue",
+      "where": "Where: Settings > ZATCA invoices (queue)",
+      "note": "",
+      "steps": [
+        "Open the invoice queue.",
+        "Check status: pending, failed, reported.",
+        "Retry failed invoices if the button is available.",
+        "If many invoices keep failing, call Isarva support."
+      ],
+      "target_route": "/settings/zatca/invoices",
+      "actions": [],
+      "screen_filename": "L3_zatca_queue.jpg"
+    },
+    {
+      "step_id": "L4",
+      "filename": "L4 - Customers (CRM).jpg",
+      "heading": "L4 — Customers (CRM)",
+      "where": "Where: Settings > Customers, or menu CRM",
+      "note": "",
+      "steps": [
+        "Search guest by phone or name.",
+        "Add new customer if needed.",
+        "Check loyalty points.",
+        "Save changes."
+      ],
+      "target_route": "/crm",
+      "actions": [],
+      "screen_filename": "L4_customers.jpg"
+    },
+    {
+      "step_id": "L5",
+      "filename": "L5 - Gift cards.jpg",
+      "heading": "L5 — Gift cards",
+      "where": "Where: Settings > Gift cards",
+      "note": "",
+      "steps": [
+        "Open Gift cards.",
+        "Create or issue a gift card with value.",
+        "Note the card number for the guest.",
+        "At payment time, Cashier can redeem the gift card.",
+        "Always check balance before redeem."
+      ],
+      "target_route": "/settings/gift-cards",
+      "actions": [],
+      "screen_filename": "L5_gift_cards.jpg"
+    },
+    {
+      "step_id": "L6",
+      "filename": "L6 - Food vouchers.jpg",
+      "heading": "L6 — Food vouchers",
+      "where": "Where: Settings > Food vouchers",
+      "note": "",
+      "steps": [
+        "Create food voucher as per your offer.",
+        "Set value and rules as shown on screen.",
+        "Redeem at settle when guest shows voucher.",
+        "Do not issue too many vouchers without control."
+      ],
+      "target_route": "/settings/food-vouchers",
+      "actions": [],
+      "screen_filename": "L6_food_vouchers.jpg"
+    },
+    {
+      "step_id": "L7",
+      "filename": "L7 - Loyalty campaigns.jpg",
+      "heading": "L7 — Loyalty campaigns",
+      "where": "Where: Settings > Loyalty campaigns",
+      "note": "",
+      "steps": [
+        "Open Loyalty campaigns.",
+        "Set birthday bonus if you want.",
+        "Set visit punch-card rules (Example: after 5 visits, give reward).",
+        "Save.",
+        "Train Cashiers to search guest phone at bill time."
+      ],
+      "target_route": "/settings/loyalty-campaigns",
+      "actions": [],
+      "screen_filename": "L7_loyalty_campaigns.jpg"
+    },
+    {
+      "step_id": "L8",
+      "filename": "L8 - Vendors (suppliers).jpg",
+      "heading": "L8 — Vendors (suppliers)",
+      "where": "Where: Settings > Vendor, or menu Vendors / Suppliers",
+      "note": "",
+      "steps": [
+        "Add supplier name, phone, and details.",
+        "Save vendor.",
+        "Use this vendor later in Purchase Orders and Stock receiving."
+      ],
+      "target_route": "/settings/vendors",
+      "actions": [],
+      "screen_filename": "L8_vendor.jpg"
+    },
+    {
+      "step_id": "L9",
+      "filename": "L9 - Delivery Boy (riders).jpg",
+      "heading": "L9 — Delivery Boy (riders)",
+      "where": "Where: Settings > Delivery Boy",
+      "note": "",
+      "steps": [
+        "Add rider name and phone.",
+        "Save.",
+        "On Delivery orders, assign this rider.",
+        "Rider login may use last 4 digits of phone (as configured)."
+      ],
+      "target_route": "/settings/delivery-riders",
+      "actions": [],
+      "screen_filename": "L9_delivery_boy.jpg"
+    },
+    {
+      "step_id": "L10",
+      "filename": "L10 - Notification settings.jpg",
+      "heading": "L10 — Notification settings",
+      "where": "Where: Settings > Notification Settings (with Delivery Integrations)",
+      "note": "",
+      "steps": [
+        "Open notifications / alerts section.",
+        "Turn on the alerts you need.",
+        "Save.",
+        "Check notify log if alert did not come."
+      ],
+      "target_route": "/settings/notifications",
+      "actions": [],
+      "screen_filename": "L10_notifications.jpg"
+    },
+    {
+      "step_id": "L11",
+      "filename": "L11 - Delivery APIs (aggregators).jpg",
+      "heading": "L11 — Delivery APIs (aggregators)",
+      "where": "Where: Settings > Delivery APIs / Delivery Integrations",
+      "note": "",
+      "steps": [
+        "Open Delivery Integrations.",
+        "Select channel (Example: HungerStation, Jahez, Keeta).",
+        "Enter API credentials from the platform.",
+        "Tap Test connection.",
+        "Use live orders only after test success.",
+        "If test fails, do not guess keys — call support."
+      ],
+      "target_route": "/settings/delivery-integrations",
+      "actions": [],
+      "screen_filename": "L11_delivery_apis.jpg"
+    },
+    {
+      "step_id": "L12",
+      "filename": "L12 - Table Area.jpg",
+      "heading": "L12 — Table Area",
+      "where": "Where: Settings > Table Area (Floor)",
+      "note": "",
+      "steps": [
+        "Create areas: Indoor, Outdoor, Family, and so on.",
+        "Set active / order if the screen shows it.",
+        "Save.",
+        "Areas appear in Dine-in floor filter."
+      ],
+      "target_route": "/settings/floor",
+      "actions": [],
+      "screen_filename": "L12_table_area.jpg"
+    },
+    {
+      "step_id": "L13",
+      "filename": "L13 - Table Management.jpg",
+      "heading": "L13 — Table Management",
+      "where": "Where: Settings > Table Management",
+      "note": "",
+      "steps": [
+        "Add tables (Table 1, Table 2…).",
+        "Set seats and area.",
+        "Save.",
+        "Open Dine-in and confirm tables show on floor map or list."
+      ],
+      "target_route": "/settings/floor?tab=tables",
+      "actions": [
+        {
+          "type": "fill",
+          "selector": "input[placeholder*='Search']",
+          "value": ""
+        }
+      ],
+      "screen_filename": "L13_table_management.jpg"
+    },
+    {
+      "step_id": "L14",
+      "filename": "L14 - Menu timetable.jpg",
+      "heading": "L14 — Menu timetable",
+      "where": "Where: Settings > Menu timetable",
+      "note": "",
+      "steps": [
+        "Open Menu timetable.",
+        "Set which menu or items are available at which time (breakfast, lunch, dinner).",
+        "Save.",
+        "At that time, check that only correct items show."
+      ],
+      "target_route": "/settings/menu-timetable",
+      "actions": [
+        {
+          "type": "wait",
+          "ms": 3000
+        }
+      ],
+      "screen_filename": "L14_menu_timetable.jpg"
+    },
+    {
+      "step_id": "L15",
+      "filename": "L15 - Addons.jpg",
+      "heading": "L15 — Addons",
+      "where": "Where: Settings > Addons",
+      "note": "",
+      "steps": [
+        "Create addon groups (Example: Extra toppings, Cooking style).",
+        "Add options and prices.",
+        "Go to Masters > dish > attach addon to the dish.",
+        "If you do not attach, addon will not show while ordering."
+      ],
+      "target_route": "/settings/addons",
+      "actions": [],
+      "screen_filename": "L15_addons.jpg"
+    },
+    {
+      "step_id": "L16",
+      "filename": "L16 - Card - SoftPOS terminal.jpg",
+      "heading": "L16 — Card / SoftPOS terminal",
+      "where": "Where: Settings > Card / SoftPOS",
+      "note": "",
+      "steps": [
+        "Open Card terminal settings.",
+        "Check bridge / terminal status.",
+        "Use demo simulate only for training. Turn it off for live sales.",
+        "Live card payment needs a working bridge. Otherwise payment will not approve."
+      ],
+      "target_route": "/payments",
+      "actions": [],
+      "screen_filename": "L16_card_terminal.jpg"
+    },
+    {
+      "step_id": "L17",
+      "filename": "L17 - Counter - Quick serve.jpg",
+      "heading": "L17 — Counter / Quick serve",
+      "where": "Where: Settings > Counter, or menu Quick Serve",
+      "note": "",
+      "steps": [
+        "Use for fast counter orders without table.",
+        "Add items > take payment > finish."
+      ],
+      "target_route": "/quick-serve",
+      "actions": [],
+      "screen_filename": "L17_counter.jpg"
+    }
+  ]
+}

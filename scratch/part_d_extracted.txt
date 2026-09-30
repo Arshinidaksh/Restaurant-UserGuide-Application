@@ -1,0 +1,146 @@
+Part D — How to take a dine-in order (Floor)
+This part explains the Dine-in / Floor ticket screen — including Discount, Extra charges, Tax (VAT), Save buttons, KOT,
+Split, Change Table, Merge Tables, and Settle.
+Step 1 — Open the table
+1. Tap Dine-in.
+2. Select the guest table.
+3. Open / seat the table (enter number of guests if asked).
+
+
+=== Page 4 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 4
+Step 2 — Add food items
+1. Choose category.
+2. Tap the dish.
+3. Select quantity.
+4. Add notes if needed (Example: “No onion”, “Less spicy”).
+5. Select add-ons if the screen shows them.
+6. Add the item to the order.
+7. Check Subtotal on the right side of the ticket.
+Step 3 — Understand the bill totals (Tax / VAT)
+On the right ticket panel you will see:
+1. Subtotal — food total before discount.
+2. Discount (%) — money reduced after you pick a discount %.
+3. Extra charges lines — if you switched on any charge (Example: Service charges, Parking).
+4. VAT / tax lines — tax is calculated by the system from Tax settings and item tax. You normally do not type tax by hand on
+the floor.
+5. Total — final amount (includes VAT when tax is on).
+Important: To change tax rates for the restaurant, Admin must go to Settings → Tax (and Tax Update / Menu details). On
+the floor you only *see* tax on the bill.
+Step 4 — How to use Discount on the floor
+1. Open the table ticket (items already added).
+2. Find the DISCOUNT row under the totals.
+3. Tap a percent button: 0%, 7%, 10% (or other % your Admin set in Settings → Discount).
+4. The active button becomes dark.
+5. Check that Discount amount and Total updated.
+6. Tap 0% if you want to remove discount.
+Notes:
+ Only use discount if your shop allows it.
+ Discount % is for this table ticket.
+ If no % buttons show, Admin must create discounts in Settings → Discount.
+Step 5 — How to use Extra Charges on the floor
+1. Extra charges must first be created in Settings → Extra Charges (and set Active).
+2. On the table ticket, find EXTRA CHARGES.
+3. Tap a charge pill to turn it ON (Example: “Service charges as per policy · SAR 150.00”).
+4. Tap again to turn it OFF.
+5. When ON, the charge line appears in the totals and Total increases.
+6. Tax on that charge (if configured) is handled by the system.
+Examples you may see: Service charges, Parking Charges, packing fee, and so on.
+Step 6 — Save / Save & Print / Save & Bill
+These three buttons keep the order without finishing payment.
+Button
+What it does
+When to use
+Save
+Saves the ticket in the system
+Guest will order more later; you need to leave the
+screen
+
+
+=== Page 5 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 5
+Button
+What it does
+When to use
+Save & Print
+Saves and prints a slip
+Guest or waiter needs a printed copy now
+Save & Bill
+Saves and opens / prints guest bill preview (temp
+bill style)
+Guest asked for the bill to review before pay
+Steps:
+1. Add items first (buttons stay disabled if the ticket is empty).
+2. Tap Save, or Save & Print, or Save & Bill.
+3. Confirm print came on the receipt printer if you chose print.
+Food Server tip: Use Save & Bill when guest wants to see the bill. Final money collection is usually Settle by
+Cashier/Admin.
+Step 7 — Send to kitchen: KOT and KOT & Print
+Button
+What it does
+KOT (may show number like KOT (2))
+Sends pending items to kitchen / KDS. Number = items waiting to send
+KOT & Print
+Sends pending items (if any) and prints kitchen / bill slip as designed
+Steps:
+1. After adding new items, tap KOT.
+2. Confirm kitchen screen or KOT printer got the order.
+3. Use KOT & Print if you also need paper in hand.
+4. If nothing is pending, system may say there is nothing to send — that is normal.
+Do not only Save if kitchen must cook — always send KOT for new food.
+Step 8 — Change Table
+Use when guests move to another table.
+1. Open the current table ticket.
+2. Tap Change Table.
+3. Select the new empty / target table.
+4. Confirm.
+5. Old table should become free; order now shows on the new table.
+6. Check floor map once.
+Who can do this: users with Change Table permission (usually Food Server / Admin).
+Step 9 — Merge Tables
+Use when two tables want one combined bill.
+1. Open the main / host table (the table that will keep the bill).
+2. Tap Merge Tables.
+3. Select the other table(s) to merge into this one.
+4. Confirm merge.
+5. Items from linked tables come onto the host bill.
+6. Floor may show a Merged badge.
+7. Settle once on the host table.
+Tips:
+ Merge carefully — confirm with guests first.
+ After merge, pay on the host table.
+
+
+=== Page 6 ===
+CONFIDENTIAL — Internal · Draft v0.1 · Not auditor-approved
+Page 6
+ If you are not sure, ask Admin before merging busy tables.
+Step 10 — Split (open Settle in split mode)
+Split on the floor opens the Settle window ready for split payment (one bill, many payment methods or people).
+1. Open table ticket.
+2. Check Total is correct (discount / charges / VAT ok).
+3. Tap Split.
+4. Settle window opens (see Part E for Equal / Custom split and payment steps).
+5. Add payments until Remaining is SAR 0.00.
+6. Tap Confirm split (or confirm settle).
+Step 11 — Settle (full payment)
+1. Open table ticket.
+2. Tap Settle (brown / main pay button).
+3. Settle window opens: Settle — Table XX.
+4. Amount due shows incl. VAT.
+5. Follow Part E to take cash / card / voucher / split.
+6. After success, table becomes free.
+Step 12 — Add more items later
+1. Open the same table again.
+2. Add new items.
+3. Tap KOT again for the new items only.
+4. Update discount / extra charges if needed before final Settle.
+Part E — Settle screen (payment, split, food voucher, gift card)
+This is the window titled Settle — Table XX (same idea for Takeaway / Quick Serve / Barcode settle).
+E1 — What you see on Settle
+1. Amount due … incl. VAT — total to collect (tax already included when tax is on).
+2. Equal / Custom tabs — for split bills.
+3. Remaining bar — how much is still unpaid.
+4. Quick buttons like Rest → Cash, Rest → mada, Rest → Visa / Mastercard, Rest → A

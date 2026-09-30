@@ -1,0 +1,48 @@
+# Environments & Secrets
+.env
+.env.local
+*.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments & package caches
+.uv/
+.pytest_cache/
+.mypy_cache/
+
+# Large binaries & PSD design source files
+*.psd
+
+# Node / Vite
+node_modules/
+.npm/
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
