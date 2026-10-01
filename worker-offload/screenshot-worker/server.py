@@ -161,10 +161,13 @@ async def execute_capture(req: CaptureRequest) -> bytes:
         await page.goto(full_url, timeout=30000)
         await page.wait_for_timeout(1000)
 
-        # Fallback check if session expired or lost
-        if await page.locator('button:has-text("Activate")').count() > 0 or await page.locator('button:has-text("OK")').count() > 0:
+        # Fallback check if session expired or lost (only trigger if terminal activation or isolated 2-input login screen)
+        needs_activate = await page.locator('button:has-text("Activate")').count() > 0
+        needs_login = await page.locator('input').count() == 2 and await page.locator('aside, nav, .sidebar').count() == 0 and await page.locator('button:has-text("OK")').count() > 0
+
+        if needs_activate or needs_login:
             logger.info("Session expired or unauthenticated. Re-authenticating...")
-            if await page.locator('button:has-text("Activate")').count() > 0:
+            if needs_activate:
                 await page.locator('input').first.fill("C001")
                 await page.locator('button:has-text("Activate")').click()
                 await page.wait_for_timeout(2000)

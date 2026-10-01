@@ -1,0 +1,127 @@
+{
+  "part_id": "P",
+  "part_title": "PART P — SETTINGS > ACCOUNTS & BACK OFFICE",
+  "output_dir": "Part P",
+  "slides": [
+    {
+      "step_id": "P1",
+      "filename": "P1 - Accounts hub.jpg",
+      "heading": "P1 — Accounts hub",
+      "where": "Location: Settings > Accounts, or menu Accounts",
+      "note": "Accounts hub consolidates all cashier tenders and expenditure tracking.",
+      "steps": [
+        "Open Settings and select Accounts tab (or Accounts menu).",
+        "Access payment types, expense management, and ledgers.",
+        "Review financial dashboard and cash registers.",
+        "Connect fiscal accounting parameters.",
+        "Manage day close routines from centralized hub."
+      ],
+      "screen_filename": "P1_accounts_hub.jpg"
+    },
+    {
+      "step_id": "P2",
+      "filename": "P2 - Payment types.jpg",
+      "heading": "P2 — Payment types",
+      "where": "Location: Settings > Accounts > Payment types",
+      "note": "Disabling unused payment methods prevents drawer reconciliation mistakes.",
+      "steps": [
+        "Open Payment types under Accounts tab.",
+        "Keep Cash, Card, and used tender types active.",
+        "Disable unused payment types to prevent cashier errors.",
+        "Configure SoftPOS / terminal integration settings.",
+        "Save payment types configuration."
+      ],
+      "screen_filename": "P2_payment_types.jpg"
+    },
+    {
+      "step_id": "P3",
+      "filename": "P3 - Expense types.jpg",
+      "heading": "P3 — Expense types",
+      "where": "Location: Settings > Accounts > Expense types",
+      "note": "Clear expense types simplify monthly profit and loss analysis.",
+      "steps": [
+        "Open Expense types in Accounts settings.",
+        "Create standard expense categories (Rent, Electricity, Gas, Cleaning).",
+        "Assign accounting codes if required.",
+        "Save expense types.",
+        "Enables structured operational cost categorization."
+      ],
+      "screen_filename": "P3_expense_types.jpg"
+    },
+    {
+      "step_id": "P4",
+      "filename": "P4 - Expense details.jpg",
+      "heading": "P4 — Expense details",
+      "where": "Location: Settings > Accounts > Expense details",
+      "note": "Log expenses promptly to maintain accurate real-time cash drawer balances.",
+      "steps": [
+        "Open Expense details to record paid operational costs.",
+        "Select branch, date, and expense category.",
+        "Enter paid amount and invoice / receipt reference note.",
+        "Attach receipt photo or voucher if supported.",
+        "Save for monthly P&L and cost auditing."
+      ],
+      "screen_filename": "P4_expense_details.jpg"
+    },
+    {
+      "step_id": "P5",
+      "filename": "P5 - Sales Ledger.jpg",
+      "heading": "P5 — Sales Ledger",
+      "where": "Location: Back Office > Sales",
+      "note": "Always review Sales Ledger before performing evening cashier handover.",
+      "steps": [
+        "Open Sales Ledger in Back Office.",
+        "Review current day gross sales, net sales, and tax totals.",
+        "Inspect breakdown across payment tenders (Cash, Card, Online).",
+        "Audit voided items and applied discounts.",
+        "Verify sales reconciliation prior to executing day close."
+      ],
+      "screen_filename": "P5_sales_ledger.jpg"
+    },
+    {
+      "step_id": "P6",
+      "filename": "P6 - Day Close.jpg",
+      "heading": "P6 — Day Close",
+      "where": "Location: Back Office > Day Close",
+      "note": "Day Close locks the business day; only authorized managers should close.",
+      "steps": [
+        "Settle all open tables and pending tickets across the branch.",
+        "Perform physical cash count of drawer contents.",
+        "Enter actual counted cash into Day Close screen.",
+        "Review calculated cash variance (over / short).",
+        "Confirm Day Close and archive official closing report."
+      ],
+      "screen_filename": "P6_day_close.jpg"
+    },
+    {
+      "step_id": "P7",
+      "filename": "P7 - Shift.jpg",
+      "heading": "P7 — Shift (Cash Drawer Shift)",
+      "where": "Location: Back Office > Shift",
+      "note": "Shift management is independent of staff attendance time clock.",
+      "steps": [
+        "Open Shift management in Back Office.",
+        "Start new shift by recording opening cash float.",
+        "Cashiers operate drawer under active shift session.",
+        "Perform midday or shift-change count upon handover.",
+        "Close shift with handover report between outgoing and incoming cashier."
+      ],
+      "screen_filename": "P7_shift.jpg"
+    },
+    {
+      "step_id": "P8",
+      "filename": "P8 - Time clock.jpg",
+      "heading": "P8 — Time clock",
+      "where": "Location: Back Office > Time clock",
+      "note": "Accurate time clock logs ensure transparent employee payroll compliance.",
+      "steps": [
+        "Staff clock in upon arrival at the restaurant.",
+        "Clock out during meal breaks or end of scheduled shift.",
+        "Review daily attendance logs and total logged hours.",
+        "Export timesheet data for payroll and salary processing.",
+        "Time clock records staff attendance, distinct from till Day Close."
+      ],
+      "screen_filename": "P8_time_clock.jpg"
+    }
+  ]
+}

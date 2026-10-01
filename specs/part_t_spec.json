@@ -1,0 +1,67 @@
+{
+  "part_id": "T",
+  "part_title": "PART T — REPORTS MODULE",
+  "output_dir": "Part T",
+  "slides": [
+    {
+      "step_id": "T1",
+      "filename": "T1 - Reports Hub.jpg",
+      "heading": "T1 — Reports Hub & Navigation",
+      "where": "Location: Menu > Reports",
+      "note": "Reports hub provides real-time business intelligence across all branches.",
+      "steps": [
+        "Open Reports from left sidebar navigation.",
+        "Choose target report category (Sales, Stock, Audits, Taxes).",
+        "Set dynamic date range (Today, Yesterday, Custom range).",
+        "Filter by specific branch or consolidated organization.",
+        "Tap View to generate analytics or Export to CSV/PDF."
+      ],
+      "screen_filename": "T1_reports_hub.jpg"
+    },
+    {
+      "step_id": "T2",
+      "filename": "T2 - Sales and Profit Reports.jpg",
+      "heading": "T2 — Sales and Profit Reports",
+      "where": "Location: Reports > Sales Summary / P&L",
+      "note": "Audit morning reports daily to track sales pacing and cashier reconciliations.",
+      "steps": [
+        "Open Sales Summary or Profit & Loss report.",
+        "Review total gross sales, discounts, net revenue, and VAT collected.",
+        "Analyze hourly sales trends to identify peak service rushes.",
+        "Inspect sales by ordering channel (Dine-in, Takeaway, Online).",
+        "Review Sales by Item to rank top-performing menu dishes."
+      ],
+      "screen_filename": "T2_sales_reports.jpg"
+    },
+    {
+      "step_id": "T3",
+      "filename": "T3 - Control and Audit Reports.jpg",
+      "heading": "T3 — Control and Audit Reports",
+      "where": "Location: Reports > Void Audit & Discount Log",
+      "note": "Regular void audits deter till theft and highlight kitchen order mistakes.",
+      "steps": [
+        "Open Void Audit report to track cancelled tickets and food waste.",
+        "Review who authorized each void along with mandatory reason notes.",
+        "Inspect Discount report to review total price concessions given.",
+        "Cross-examine Food-cost variance (recipe cost vs actual depletion).",
+        "Safeguards restaurant revenue against unauthorized floor voids."
+      ],
+      "screen_filename": "T3_control_reports.jpg"
+    },
+    {
+      "step_id": "T4",
+      "filename": "T4 - Stock and Purchase Reports.jpg",
+      "heading": "T4 — Stock and Purchase Reports",
+      "where": "Location: Reports > Stock Summary & PO Log",
+      "note": "Stock valuation reports feed directly into financial balance sheets.",
+      "steps": [
+        "Open Stock Summary report to check current on-hand inventory value.",
+        "Review Stock Summary Log to audit historical stock movements.",
+        "Inspect Purchase Order Log to check open, received, and cancelled POs.",
+        "Identify low-stock items approaching minimum safety thresholds.",
+        "Export inventory valuation reports for month-end accounting."
+      ],
+      "screen_filename": "T4_stock_reports.jpg"
+    }
+  ]
+}

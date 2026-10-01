@@ -1,0 +1,140 @@
+{
+  "part_id": "INFO",
+  "part_title": "INFORMATION SLIDES — CHECKLISTS & POLICIES",
+  "output_dir": "Information Slides",
+  "slides": [
+    {
+      "step_id": "V1",
+      "filename": "Part V - Full Setup Order Checklist.jpg",
+      "is_info_slide": true,
+      "heading": "Full Setup Order Checklist",
+      "description": "Recommended sequential order for onboarding a new restaurant branch without missing dependencies",
+      "columns": 2,
+      "items": [
+        "1. Activate POS + Admin login (Company Code & Admin PIN)",
+        "2. Company Details + Branches (Legal name, address & VAT)",
+        "3. Tax + Units + Departments (15% VAT, kg/L units, kitchen depts)",
+        "4. Categories + Menu items + Addons (Dishes & customizers)",
+        "5. Extra charges + Payment types (Service, packing, cash/card)",
+        "6. Floor areas + Tables (Dining zones, capacity & layout)",
+        "7. Printers + Mapping + Test print (Receipt & KOT routing)",
+        "8. Users + Roles + PIN (Staff credentials & granular privileges)",
+        "9. Ingredients + Recipes (Raw materials & portion food-cost)",
+        "10. Storage locations + Vendors + PO + Receiving (Stock control)",
+        "11. Delivery APIs + Riders (Aggregators & delivery fleet)",
+        "12. SoftPOS card terminal (Payment bridge & reader pairing)",
+        "13. Gift cards / vouchers / loyalty (Promotions & customer points)",
+        "14. ZATCA details (KSA Phase 2 e-invoicing compliance)",
+        "15. Database backup / export (Baseline data snapshot)",
+        "16. Full test: order > kitchen > pay > one report"
+      ],
+      "note": "Complete each milestone before accepting live paying customers."
+    },
+    {
+      "step_id": "W1",
+      "filename": "Part W1 - Common Problems Floor Orders and Tax.jpg",
+      "is_info_slide": true,
+      "heading": "Common Problems — Floor, Orders & Tax",
+      "description": "Instant frontline diagnosis and remediation protocols for floor orders and billing",
+      "columns": 2,
+      "items": [
+        {"title": "Addon not showing on order", "desc": "Attach addon to dish in Masters > Addons, then sync till."},
+        {"title": "Discount buttons missing", "desc": "Admin: Settings > Discount; then reopen table ticket."},
+        {"title": "Extra charges missing on floor", "desc": "Admin: Settings > Extra Charges; ensure status is Active."},
+        {"title": "Tax looks wrong on bill", "desc": "Admin: Settings > Tax / Menu details; do not alter tax on floor."},
+        {"title": "Change Table / Merge not visible", "desc": "Role lacks permission; enable Change Table in Role Privilege."},
+        {"title": "Split / Settle not visible", "desc": "User role needs Settle permission (Cashier or Admin role)."},
+        {"title": "Confirm split button is grey", "desc": "Remaining balance is not 0; assign remaining amount to tender."},
+        {"title": "Food voucher not applying", "desc": "Create voucher in Settings; verify valid code during Settle."}
+      ],
+      "note": "Frontline staff should never change master tax or price records during service."
+    },
+    {
+      "step_id": "W2",
+      "filename": "Part W2 - Common Problems Hardware Stock Delivery.jpg",
+      "is_info_slide": true,
+      "heading": "Common Problems — Hardware, Stock & Delivery",
+      "description": "Remediation procedures for printers, inventory discrepancies, and online channels",
+      "columns": 2,
+      "items": [
+        {"title": "KOT on wrong printer", "desc": "Fix department routing in Settings > Printer > Printer Mapping."},
+        {"title": "Stock not increasing after delivery", "desc": "Use Stock Receiving screen (creating a PO alone does not increment stock)."},
+        {"title": "Transfer done but qty wrong", "desc": "Check from/to location selections and confirm complete transfer."},
+        {"title": "Report shows empty data", "desc": "Check selected date range filter and verify active branch."},
+        {"title": "Staff cannot open Stock", "desc": "Grant Stock / Inventory permission in Settings > Role Privilege."},
+        {"title": "Card payment always fails", "desc": "Check SoftPOS bridge service; disable training simulate for live."},
+        {"title": "Online order not coming", "desc": "Test Delivery API connection; verify aggregator credentials."},
+        {"title": "Food cost report looks wrong", "desc": "Audit recipe quantities and standardize raw ingredient units."}
+      ],
+      "note": "If till shows 'Tile coming later', the feature is scheduled for a future release."
+    },
+    {
+      "step_id": "X1",
+      "filename": "Part X - Daily Closing Checklist.jpg",
+      "is_info_slide": true,
+      "heading": "Daily Closing Checklist",
+      "description": "Essential 5-step end-of-day shutdown routine to ensure audit and cash integrity",
+      "columns": 1,
+      "items": [
+        {"title": "1. Settle open tables & tickets", "desc": "Ensure all dine-in tables, takeaway tickets, and unsettled payments are fully closed."},
+        {"title": "2. Finish delivery & online orders", "desc": "Verify all courier handovers and online aggregator orders are completed or properly transferred."},
+        {"title": "3. Review Payments & Sales reports", "desc": "Cross-check Payments Received report (Cash vs Card vs Online) against actual drawer cash."},
+        {"title": "4. Execute Branch Day Close", "desc": "Perform Day Close for the branch as an authorized user and archive the generated closing report."},
+        {"title": "5. Sign out & Secure terminal", "desc": "Sign out of Admin account; never leave counter terminals unlocked or unattended overnight."}
+      ],
+      "note": "Day Close locks the accounting period and ensures tamper-proof financial reconciliation."
+    },
+    {
+      "step_id": "Y1",
+      "filename": "Part Y - Customer Security Rules.jpg",
+      "is_info_slide": true,
+      "heading": "Customer Security & Compliance Rules",
+      "description": "Mandatory ISO/IEC 27001:2022 security policies for all restaurant staff and till operators",
+      "columns": 2,
+      "items": [
+        {"title": "1. Individual Staff Logins", "desc": "Each staff member must operate under their own unique username and PIN."},
+        {"title": "2. Lock Counter Terminals", "desc": "Always lock or sign out of the POS screen whenever stepping away from the counter."},
+        {"title": "3. Protect Admin Credentials", "desc": "Never share Admin passwords or PINs on WhatsApp groups, sticky notes, or public chat."},
+        {"title": "4. Immediate Account Revocation", "desc": "Deactivate accounts of departing employees on the exact day of termination."},
+        {"title": "5. Card Data Protection", "desc": "Strictly prohibit typing customer credit/debit card numbers in order notes or text fields."},
+        {"title": "6. Incident Reporting", "desc": "Report suspicious logins, unauthorized voids, or cash variances to the Restaurant Owner immediately."}
+      ],
+      "note": "Compliance with ISO/IEC 27001 protects restaurant financial assets and customer trust."
+    },
+    {
+      "step_id": "QS1",
+      "filename": "Quick Start Summary.jpg",
+      "is_info_slide": true,
+      "heading": "First Day Quick Start Summary",
+      "description": "Chronological operational milestones to achieve a successful opening day",
+      "columns": 2,
+      "items": [
+        "1. Open app URL > Activate POS with restaurant Company Code",
+        "2. Sign in as Admin using temporary authorized PIN",
+        "3. Company Details & Branches > Select active till branch",
+        "4. Configure Tax (15% VAT), Units, Departments, and Menus",
+        "5. Set up Floor Areas, Dining Tables, and KOT Printers",
+        "6. Create Staff Users with appropriate Role Privileges & PINs",
+        "7. Initialize Stock Basics (Storage locations, vendors, receiving)",
+        "8. Run test order: seat table, dispatch KOT, settle payment, review report",
+        "9. Start live customer operations with confidence"
+      ],
+      "note": "Keep this quick start summary easily accessible at the manager workstation."
+    },
+    {
+      "step_id": "SUP1",
+      "filename": "Support and Document Control.jpg",
+      "is_info_slide": true,
+      "heading": "Technical Support & Document Control",
+      "description": "Official communication channels, implementation assistance, and audit version history",
+      "columns": 2,
+      "items": [
+        {"title": "Official Support Channels", "desc": "Contact your designated Isarva technical support representative via official WhatsApp channel or onboarding portal."},
+        {"title": "Onboarding & Training Assistance", "desc": "Request refresher staff training, hardware pairing guidance, or ZATCA e-invoicing Phase 2 integration support."},
+        {"title": "Document Control & Security", "desc": "Keep this document confidential with Restaurant Owner and Admin. Document ID: ISARVA-CG-001 (ISO/IEC 27001 Draft v0.1)."},
+        {"title": "Version Changelog", "desc": "v1.0: First customer step-by-step guide | v1.1: Full Settings tabs, printers, catalog, stock | v1.2: Floor ticket guide, split, settle & food voucher."}
+      ],
+      "note": "For urgent on-site hardware or network emergencies, reach out directly to your assigned Isarva lead."
+    }
+  ]
+}

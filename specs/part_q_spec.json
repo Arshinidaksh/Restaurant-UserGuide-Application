@@ -1,0 +1,52 @@
+{
+  "part_id": "Q",
+  "part_title": "PART Q — SETTINGS > INGREDIENTS & RECIPES",
+  "output_dir": "Part Q",
+  "slides": [
+    {
+      "step_id": "Q1",
+      "filename": "Q1 - Ingredient Master.jpg",
+      "heading": "Q1 — Ingredient Master",
+      "where": "Location: Settings > Ingredient Master",
+      "note": "Raw ingredient master forms the foundation for recipe food-costing.",
+      "steps": [
+        "Open Settings and select Ingredients tab.",
+        "Tap Ingredient Master to manage raw inventory items.",
+        "Add raw material: name, item code/SKU, and measurement unit.",
+        "Assign preferred vendor and primary storage location.",
+        "Save master record (on-hand quantities are managed in Stock)."
+      ],
+      "screen_filename": "Q1_ingredient_master.jpg"
+    },
+    {
+      "step_id": "Q2",
+      "filename": "Q2 - Menu item recipes.jpg",
+      "heading": "Q2 — Menu item recipes",
+      "where": "Location: Masters > Dishes > Recipe / Ingredients",
+      "note": "Precise portion measurements prevent food-cost variance and ingredient waste.",
+      "steps": [
+        "Open target dish from Masters > Dishes.",
+        "Switch to Recipe / Ingredients configuration subtab.",
+        "Link raw ingredients required for one portion.",
+        "Specify portion quantities and preparation loss factor.",
+        "Save recipe to automate food-cost tracking and stock depletion."
+      ],
+      "screen_filename": "Q2_item_recipes.jpg"
+    },
+    {
+      "step_id": "Q3",
+      "filename": "Q3 - Recipe usage.jpg",
+      "heading": "Q3 — Recipe usage",
+      "where": "Location: Settings > Recipe usage",
+      "note": "Audit recipe usage regularly against kitchen prep sheets.",
+      "steps": [
+        "Open Recipe usage under Ingredients tab.",
+        "Review theoretical ingredient consumption per dish.",
+        "Audit recipes linked to multiple menu items.",
+        "Adjust portion ratios or fix incorrect units if needed.",
+        "Re-sync catalog to update food-cost calculations."
+      ],
+      "screen_filename": "Q3_recipe_usage.jpg"
+    }
+  ]
+}

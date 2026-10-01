@@ -1,0 +1,245 @@
+{
+  "part_id": "N",
+  "part_title": "PART N — SETTINGS > PRODUCTS",
+  "output_dir": "Part N",
+  "pos_base_url": "https://app.restaurant-pos.isarva.in",
+  "slides": [
+    {
+      "step_id": "N1",
+      "filename": "N1 - Department List.jpg",
+      "heading": "N1 — Department List",
+      "where": "Location: Settings > Catalog > Department List",
+      "note": "Departments govern kitchen ticket routing to appropriate printer stations.",
+      "steps": [
+        "Open Settings and select Catalog tab.",
+        "Tap Department List.",
+        "Create departments (Kitchen, Bar, Grill, Fast Food, etc.).",
+        "Set display colour and sort order if shown.",
+        "Save. Departments help KOT routing and menu structure."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Department List"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N1_department_list.jpg"
+    },
+    {
+      "step_id": "N2",
+      "filename": "N2 - Menu items.jpg",
+      "heading": "N2 — Menu items (Dishes)",
+      "where": "Location: Settings > Catalog > Menu items, or Masters > Dishes",
+      "note": "Always sync other tills immediately after adding or modifying dishes.",
+      "steps": [
+        "Create categories first (Main / Sub).",
+        "Add dish: name, price, department, and tax rate.",
+        "Add photo if needed for visual till display.",
+        "Attach recipes, addons, and customizers as needed.",
+        "Save and sync other tills."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Menu items"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N2_menu_items.jpg"
+    },
+    {
+      "step_id": "N3",
+      "filename": "N3 - Menu details.jpg",
+      "heading": "N3 — Menu details (Tax & Photos)",
+      "where": "Location: Settings > Catalog > Menu details",
+      "note": "Accurate product metadata ensures clean visual menus and compliant invoices.",
+      "steps": [
+        "Open Menu details from Catalog.",
+        "Assign or audit applicable tax across dishes.",
+        "Update dish photos and extra product metadata.",
+        "Verify descriptions and portion parameters.",
+        "Save all changes."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Menu details (tax & photos)"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N3_menu_details.jpg"
+    },
+    {
+      "step_id": "N4",
+      "filename": "N4 - Tax.jpg",
+      "heading": "N4 — Tax",
+      "where": "Location: Settings > Catalog > Tax",
+      "note": "Tax changes impact all new bills and ZATCA compliance reporting.",
+      "steps": [
+        "Open Tax master in Settings.",
+        "Confirm standard VAT rate (e.g., 15% in KSA).",
+        "Verify tax calculation parameters and active status.",
+        "Save configuration.",
+        "Do not change tax casually after go-live without accounts advice."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Tax"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N4_tax.jpg"
+    },
+    {
+      "step_id": "N5",
+      "filename": "N5 - Tax Update bulk.jpg",
+      "heading": "N5 — Tax Update (Bulk)",
+      "where": "Location: Settings > Catalog > Tax Update",
+      "note": "Bulk update saves hours during tax audits or regulatory rate changes.",
+      "steps": [
+        "Open Tax Update screen.",
+        "Select target category or group of products.",
+        "Apply tax rate to multiple products simultaneously.",
+        "Review summary confirmation before saving.",
+        "Check 1-2 sample bills after update."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Tax Update"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N5_tax_update.jpg"
+    },
+    {
+      "step_id": "N6",
+      "filename": "N6 - Discount master.jpg",
+      "heading": "N6 — Discount Master",
+      "where": "Location: Settings > Catalog > Discount",
+      "note": "Control discounts carefully to protect profit margins and prevent cashier abuse.",
+      "steps": [
+        "Open Discount master.",
+        "Create allowed discount types (percentage or fixed amount).",
+        "Set discount limits and name (Staff, VIP, Promo).",
+        "Save.",
+        "Only authorised roles should have rights to apply discounts."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Discount"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N6_discount.jpg"
+    },
+    {
+      "step_id": "N7",
+      "filename": "N7 - Units.jpg",
+      "heading": "N7 — Units",
+      "where": "Location: Settings > Catalog > Units",
+      "note": "Consistent units prevent recipe errors and inaccurate stock depletion.",
+      "steps": [
+        "Open Units in Catalog settings.",
+        "Add measurement units for stock and recipes (kg, g, litre, piece, etc.).",
+        "Set decimal precision if supported.",
+        "Save.",
+        "Use the exact same units in ingredients, recipes, and POs."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Units"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N7_units.jpg"
+    },
+    {
+      "step_id": "N8",
+      "filename": "N8 - Extra Charges.jpg",
+      "heading": "N8 — Extra Charges",
+      "where": "Location: Settings > Catalog > Extra Charges",
+      "note": "Extra charges can be set as mandatory or optional per service channel.",
+      "steps": [
+        "Open Extra Charges.",
+        "Add active charges (Service charge, Packing, Delivery fee).",
+        "Configure taxability on each charge if required by law.",
+        "Save.",
+        "Confirm charge calculates properly on floor tickets when applied."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Extra Charges"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N8_extra_charges.jpg"
+    },
+    {
+      "step_id": "N9",
+      "filename": "N9 - Beverages Quantity Master.jpg",
+      "heading": "N9 — Beverages Quantity Master",
+      "where": "Location: Settings > Catalog > Beverages Quantity Master",
+      "note": "Standard beverage quantities simplify barista and bartender operations.",
+      "steps": [
+        "Open Beverages Quantity Master.",
+        "Define beverage sizes or serving quantities (Small, Medium, Large, 330ml).",
+        "Set display order.",
+        "Save.",
+        "Quantity tiers link to Beverage Price Master."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Beverages Quantity Master"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N9_beverages_quantity.jpg"
+    },
+    {
+      "step_id": "N10",
+      "filename": "N10 - Beverages Price Master.jpg",
+      "heading": "N10 — Beverages Price Master",
+      "where": "Location: Settings > Catalog > Beverages Price Master",
+      "note": "Ensures consistent pricing across all drink sizes without duplicate menu items.",
+      "steps": [
+        "Open Beverages Price Master.",
+        "Set selling price for each beverage size tier.",
+        "Associate price to corresponding beverage items.",
+        "Save.",
+        "Place a test beverage order on Dine-in or Takeaway to verify price."
+      ],
+      "target_route": "/settings",
+      "actions": [
+        {"type": "click", "selector": "text=Catalog"},
+        {"type": "wait", "ms": 600},
+        {"type": "click", "selector": "text=Beverages Price Master"},
+        {"type": "wait", "ms": 1500}
+      ],
+      "screen_filename": "N10_beverages_price.jpg"
+    },
+    {
+      "step_id": "N11",
+      "filename": "N11 - Online Price List.jpg",
+      "heading": "N11 — Online Price List",
+      "where": "Location: Online Module > Channel APIs & Price List",
+      "note": "Maintain price parity or intentional aggregator markups across all online channels.",
+      "steps": [
+        "Open Online module from main navigation.",
+        "Review online order channels (HungerStation, Jahez, Keeta, Web, QR).",
+        "Verify aggregator channel pricing and markup if different from store.",
+        "Update online prices whenever in-store menu prices change.",
+        "Save and sync aggregator menus."
+      ],
+      "target_route": "/online",
+      "actions": [],
+      "screen_filename": "N11_online_price_list.jpg"
+    }
+  ]
+}

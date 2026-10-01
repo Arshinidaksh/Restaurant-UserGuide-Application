@@ -1,0 +1,67 @@
+{
+  "part_id": "S",
+  "part_title": "PART S — SETTINGS > DATABASE",
+  "output_dir": "Part S",
+  "slides": [
+    {
+      "step_id": "S1",
+      "filename": "S1 - Export.jpg",
+      "heading": "S1 — Export",
+      "where": "Location: Settings > Database > Export",
+      "note": "Export packages serve as safe restore points before bulk data edits.",
+      "steps": [
+        "Open Settings and navigate to Database tab.",
+        "Access Export utility.",
+        "Select target data package (Full catalog, dishes, tax, master tables).",
+        "Export data package to secure local archive file.",
+        "Always take an export snapshot before major menu restructuring."
+      ],
+      "screen_filename": "S1_export.jpg"
+    },
+    {
+      "step_id": "S2",
+      "filename": "S2 - Import.jpg",
+      "heading": "S2 — Import",
+      "where": "Location: Settings > Database > Import",
+      "note": "Verify all imported records on a test till before opening live service.",
+      "steps": [
+        "Open Import utility under Database settings.",
+        "Select approved master file provided by Admin or Isarva support.",
+        "Validate file format and confirm import execution.",
+        "Wait for database import to process completely.",
+        "Audit menu, tax, and categories immediately following import."
+      ],
+      "screen_filename": "S2_import.jpg"
+    },
+    {
+      "step_id": "S3",
+      "filename": "S3 - Backup.jpg",
+      "heading": "S3 — Backup",
+      "where": "Location: Settings > Database > Backup",
+      "note": "Routine database backups prevent business data loss during hardware failures.",
+      "steps": [
+        "Access Backup utility from Database tab.",
+        "Initiate complete database backup snapshot.",
+        "Download and store encrypted backup file in a secure repository.",
+        "Schedule regular daily/weekly backup milestones.",
+        "Execute disaster recovery restore only with Isarva support guidance."
+      ],
+      "screen_filename": "S3_backup.jpg"
+    },
+    {
+      "step_id": "S4",
+      "filename": "S4 - Data Cleaning.jpg",
+      "heading": "S4 — Data Cleaning",
+      "where": "Location: Settings > Database > Data Cleaning",
+      "note": "Data Cleaning irreversibly wipes transaction logs; exercise extreme caution.",
+      "steps": [
+        "Open Data Cleaning utility under Database tab.",
+        "Strictly use only for training tills or demo data clearing.",
+        "Never execute Data Cleaning on live production restaurant data.",
+        "Requires high-level Admin authentication and explicit confirmation.",
+        "Execute data purge only under supervised Isarva technical support."
+      ],
+      "screen_filename": "S4_data_cleaning.jpg"
+    }
+  ]
+}

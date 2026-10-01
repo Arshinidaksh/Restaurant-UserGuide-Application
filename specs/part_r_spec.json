@@ -1,0 +1,97 @@
+{
+  "part_id": "R",
+  "part_title": "PART R — SETTINGS > INVENTORY & STOCK",
+  "output_dir": "Part R",
+  "slides": [
+    {
+      "step_id": "R1",
+      "filename": "R1 - Storage locations.jpg",
+      "heading": "R1 — Storage locations",
+      "where": "Location: Settings > Inventory > Storage locations",
+      "note": "Configuring logical locations enables accurate store-to-kitchen tracking.",
+      "steps": [
+        "Open Settings and select Inventory tab.",
+        "Access Storage locations.",
+        "Create designated storage zones (Main Store, Kitchen, Bar, Walk-in, Pastry).",
+        "Set temperature or zone tags if supported.",
+        "Save storage locations for use in transfers and receiving."
+      ],
+      "screen_filename": "R1_storage_locations.jpg"
+    },
+    {
+      "step_id": "R2",
+      "filename": "R2 - Yield conversions.jpg",
+      "heading": "R2 — Yield conversions",
+      "where": "Location: Settings > Inventory > Yield conversions",
+      "note": "Yield formulas ensure realistic inventory depletion during bulk food prep.",
+      "steps": [
+        "Open Yield conversions under Inventory settings.",
+        "Link raw bulk items to prepped kitchen ingredients.",
+        "Set yield conversion factor (e.g. Whole chicken > Cleaned chicken breast).",
+        "Account for trimming, cooking, or butcher waste percentages.",
+        "Save conversion formulas for kitchen prep batches."
+      ],
+      "screen_filename": "R2_yield_conversions.jpg"
+    },
+    {
+      "step_id": "R3",
+      "filename": "R3 - Stock receiving.jpg",
+      "heading": "R3 — Stock receiving",
+      "where": "Location: Settings > Inventory > Stock receiving",
+      "note": "Stock counts only increase upon formal Stock Receiving confirmation.",
+      "steps": [
+        "Open Stock receiving when vendor deliveries arrive.",
+        "Select delivering vendor or link existing Purchase Order.",
+        "Inspect items and enter verified quantities received.",
+        "Record invoice number, batch date, and unit cost.",
+        "Confirm receiving to immediately update on-hand stock quantities."
+      ],
+      "screen_filename": "R3_stock_receiving.jpg"
+    },
+    {
+      "step_id": "R4",
+      "filename": "R4 - Stock transfer.jpg",
+      "heading": "R4 — Stock transfer",
+      "where": "Location: Settings > Inventory > Stock transfer",
+      "note": "Never record transfers in system without executing physical movement.",
+      "steps": [
+        "Open Stock transfer screen.",
+        "Select source location / branch (e.g. Main Store).",
+        "Select destination location / branch (e.g. Kitchen or Bar).",
+        "Add transfer items and enter physical movement quantities.",
+        "Confirm transfer and verify inventory updates at both locations."
+      ],
+      "screen_filename": "R4_stock_transfer.jpg"
+    },
+    {
+      "step_id": "R5",
+      "filename": "R5 - Purchase Order.jpg",
+      "heading": "R5 — Purchase Order (PO)",
+      "where": "Location: Inventory > Purchase Orders",
+      "note": "POs provide a clear audit trail for purchasing commitments and costs.",
+      "steps": [
+        "Open Purchase Orders module.",
+        "Create new PO for authorized food vendor.",
+        "Add required items, reorder quantities, and expected delivery date.",
+        "Save and issue PO via PDF or email to vendor.",
+        "Receive goods against the PO upon warehouse delivery."
+      ],
+      "screen_filename": "R5_purchase_orders.jpg"
+    },
+    {
+      "step_id": "R6",
+      "filename": "R6 - Stock Master.jpg",
+      "heading": "R6 — Stock Master (On-Hand)",
+      "where": "Location: Stock / Inventory > Stock Master",
+      "note": "Periodic physical inventory counts verify actual versus theoretical stock.",
+      "steps": [
+        "Open Stock Master from main navigation.",
+        "Search items by category, vendor, or storage location.",
+        "Review real-time on-hand stock quantities and inventory valuation.",
+        "Perform stock adjustments only with manager approval (spoilage, count variance).",
+        "Enter mandatory adjustment reason for inventory audits."
+      ],
+      "screen_filename": "R6_stock_master.jpg"
+    }
+  ]
+}

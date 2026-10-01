@@ -14,7 +14,7 @@ from pydantic import BaseModel, Field
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form, Response
 from PIL import Image
 
-from src.composer import compose_slide, resize_image
+from src.composer import compose_slide, compose_info_slide, resize_image
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("stitcher-worker")
@@ -118,6 +118,69 @@ async def compose_endpoint(
 
         except Exception as e:
             logger.error(f"Error composing slide '{heading}': {e}", exc_info=True)
+            raise HTTPException(status_code=500, detail=str(e))
+        finally:
+            state.active_jobs -= 1
+
+def _sync_compose_info_and_encode(
+    kicker: str,
+    heading: str,
+    description: str,
+    items_list: list,
+    note: str,
+    columns: int,
+    quality: int
+) -> bytes:
+    slide = compose_info_slide(
+        kicker=kicker,
+        heading=heading,
+        description=description,
+        items=items_list,
+        note=note,
+        columns=columns
+    )
+    out_buf = io.BytesIO()
+    slide.save(out_buf, format="JPEG", quality=quality, optimize=True)
+    return out_buf.getvalue()
+
+@app.post("/compose-info")
+async def compose_info_endpoint(
+    kicker: str = Form(default=""),
+    heading: str = Form(default=""),
+    description: str = Form(default=""),
+    items: str = Form(default="[]", description="JSON array of items/strings/dicts"),
+    note: str = Form(default=""),
+    columns: int = Form(default=2),
+    quality: int = Form(default=96)
+):
+    async with state.semaphore:
+        state.active_jobs += 1
+        try:
+            items_list = []
+            if items:
+                try:
+                    items_list = json.loads(items)
+                except Exception:
+                    items_list = [items]
+
+            loop = asyncio.get_running_loop()
+            result_bytes = await loop.run_in_executor(
+                thread_pool,
+                _sync_compose_info_and_encode,
+                kicker,
+                heading,
+                description,
+                items_list,
+                note,
+                columns,
+                quality
+            )
+
+            state.total_processed += 1
+            return Response(content=result_bytes, media_type="image/jpeg")
+
+        except Exception as e:
+            logger.error(f"Error composing info slide '{heading}': {e}", exc_info=True)
             raise HTTPException(status_code=500, detail=str(e))
         finally:
             state.active_jobs -= 1

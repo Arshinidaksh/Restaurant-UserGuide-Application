@@ -87,6 +87,33 @@ async def stitch_slide(
         print(f"  [STITCH DONE] Slide '{slide_def.get('heading', '')}' rendered in {elapsed:.2f}s ({len(resp.content)//1024} KB)")
         return resp.content
 
+async def stitch_info_slide(
+    client: httpx.AsyncClient,
+    stitcher_url: str,
+    kicker: str,
+    slide_def: Dict[str, Any],
+    semaphore: asyncio.Semaphore
+) -> bytes:
+    endpoint = f"{stitcher_url.rstrip('/')}/compose-info"
+    data = {
+        "kicker": kicker,
+        "heading": slide_def.get("heading", ""),
+        "description": slide_def.get("description", ""),
+        "items": json.dumps(slide_def.get("items", [])),
+        "note": slide_def.get("note", ""),
+        "columns": int(slide_def.get("columns", 2)),
+        "quality": 96
+    }
+
+    async with semaphore:
+        t0 = time.time()
+        print(f"  [INFO STITCH START] Composing info slide '{slide_def.get('heading', '')}'...")
+        resp = await client.post(endpoint, data=data, timeout=60.0)
+        resp.raise_for_status()
+        elapsed = time.time() - t0
+        print(f"  [INFO STITCH DONE] Slide '{slide_def.get('heading', '')}' rendered in {elapsed:.2f}s ({len(resp.content)//1024} KB)")
+        return resp.content
+
 async def process_single_slide(
     client: httpx.AsyncClient,
     kicker: str,
@@ -100,36 +127,47 @@ async def process_single_slide(
     pos_base_url: str
 ):
     slide_filename = slide_def.get("filename", "slide.jpg")
-    screen_filename = slide_def.get("screen_filename", "screen.jpg")
-    screen_local_path = os.path.join(screens_dir, screen_filename)
+    is_info = slide_def.get("is_info_slide", False)
 
-    # 1. Capture screen via screenshot-vm (or use local screen cache if present and requested)
-    screen_bytes = None
-    if os.path.exists(screen_local_path):
-        print(f"  [CACHE] Using locally cached screen for '{screen_filename}'")
-        with open(screen_local_path, "rb") as f:
-            screen_bytes = f.read()
-    else:
-        screen_bytes = await capture_screenshot(
+    if is_info:
+        slide_bytes = await stitch_info_slide(
             client=client,
-            screenshot_url=cfg["screenshot_worker_url"],
+            stitcher_url=cfg["stitcher_worker_url"],
+            kicker=kicker,
             slide_def=slide_def,
-            pos_base_url=pos_base_url,
-            semaphore=cap_sem
+            semaphore=stitch_sem
         )
-        # Cache screen locally
-        with open(screen_local_path, "wb") as f:
-            f.write(screen_bytes)
+    else:
+        screen_filename = slide_def.get("screen_filename", "screen.jpg")
+        screen_local_path = os.path.join(screens_dir, screen_filename)
 
-    # 2. Pipeline directly to stitcher-vm for composition & resizing
-    slide_bytes = await stitch_slide(
-        client=client,
-        stitcher_url=cfg["stitcher_worker_url"],
-        kicker=kicker,
-        slide_def=slide_def,
-        screen_bytes=screen_bytes,
-        semaphore=stitch_sem
-    )
+        # 1. Capture screen via screenshot-vm (or use local screen cache if present and requested)
+        screen_bytes = None
+        if os.path.exists(screen_local_path):
+            print(f"  [CACHE] Using locally cached screen for '{screen_filename}'")
+            with open(screen_local_path, "rb") as f:
+                screen_bytes = f.read()
+        else:
+            screen_bytes = await capture_screenshot(
+                client=client,
+                screenshot_url=cfg["screenshot_worker_url"],
+                slide_def=slide_def,
+                pos_base_url=pos_base_url,
+                semaphore=cap_sem
+            )
+            # Cache screen locally
+            with open(screen_local_path, "wb") as f:
+                f.write(screen_bytes)
+
+        # 2. Pipeline directly to stitcher-vm for composition & resizing
+        slide_bytes = await stitch_slide(
+            client=client,
+            stitcher_url=cfg["stitcher_worker_url"],
+            kicker=kicker,
+            slide_def=slide_def,
+            screen_bytes=screen_bytes,
+            semaphore=stitch_sem
+        )
 
     # 3. Save final output
     p1 = os.path.join(slides_out_dir, slide_filename)

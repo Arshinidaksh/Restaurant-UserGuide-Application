@@ -1,0 +1,127 @@
+{
+  "part_id": "U",
+  "part_title": "PART U — OTHER DAILY MODULES",
+  "output_dir": "Part U",
+  "slides": [
+    {
+      "step_id": "U1",
+      "filename": "U1 - Home.jpg",
+      "heading": "U1 — Home Dashboard",
+      "where": "Location: Main Navigation > Home",
+      "note": "Home dashboard serves as the central command cockpit for the shift.",
+      "steps": [
+        "Access Home dashboard from main sidebar.",
+        "Review today's key performance metrics snapshot.",
+        "Monitor live active sales, open tables, and KOT counts.",
+        "Access quick-action shortcut tiles to operational modules.",
+        "Switch active branch or terminal language seamlessly."
+      ],
+      "screen_filename": "U1_home.jpg"
+    },
+    {
+      "step_id": "U2",
+      "filename": "U2 - Dine-in Floor.jpg",
+      "heading": "U2 — Dine-in Floor Operations",
+      "where": "Location: Main Navigation > Floor / Dine-in",
+      "note": "Visual floor plans show table statuses (Available, Seated, Billed).",
+      "steps": [
+        "Tap Dine-in to view interactive floor layout.",
+        "Select dining area (Indoor, Outdoor, Family, VIP).",
+        "Tap table to seat guests and open ticket.",
+        "Add food items, apply customizers, and dispatch KOT to kitchen.",
+        "Manage table changes, merging, splits, and final settlement."
+      ],
+      "screen_filename": "U2_dine_in.jpg"
+    },
+    {
+      "step_id": "U3",
+      "filename": "U3 - Payments Unsettled.jpg",
+      "heading": "U3 — Payments & Unsettled Hub",
+      "where": "Location: Main Navigation > Payments",
+      "note": "Clear all unsettled bills prior to conducting daily branch closing.",
+      "steps": [
+        "Open Payments module to view all open tickets.",
+        "Filter tickets by channel (Dine-in, Takeaway, Delivery).",
+        "Select unsettled ticket to initiate checkout.",
+        "Process single or split tenders (Cash, Card, Voucher).",
+        "Finalize payment and print ZATCA-compliant fiscal receipt."
+      ],
+      "screen_filename": "U3_payments.jpg"
+    },
+    {
+      "step_id": "U4",
+      "filename": "U4 - Takeaway Drive-thru.jpg",
+      "heading": "U4 — Takeaway & Quick Serve",
+      "where": "Location: Main Navigation > Takeaway",
+      "note": "Optimized for minimal keystrokes during intense peak counter rushes.",
+      "steps": [
+        "Tap Takeaway for fast over-the-counter ordering.",
+        "Fast-add popular menu items directly to ticket.",
+        "Record customer name, phone, or car license plate for Drive-thru.",
+        "Dispatch order directly to kitchen or expo station.",
+        "Settle immediately using fast cash or integrated card terminal."
+      ],
+      "screen_filename": "U4_takeaway.jpg"
+    },
+    {
+      "step_id": "U5",
+      "filename": "U5 - Delivery Online.jpg",
+      "heading": "U5 — Delivery, Online & Courier",
+      "where": "Location: Main Navigation > Delivery / Online",
+      "note": "Centralized delivery board prevents aggregator order dispatch delays.",
+      "steps": [
+        "Open Delivery module to manage in-house fleet orders.",
+        "Assign delivery drivers and track dispatch status.",
+        "Switch to Online view to manage aggregator orders (HungerStation, Jahez).",
+        "Monitor Courier pickup board for platform driver handovers.",
+        "Generate QR digital menu links for in-store guest ordering."
+      ],
+      "screen_filename": "U5_delivery.jpg"
+    },
+    {
+      "step_id": "U6",
+      "filename": "U6 - Kitchen KDS.jpg",
+      "heading": "U6 — Kitchen Display System (KDS)",
+      "where": "Location: Main Navigation > Kitchen / KDS",
+      "note": "Eliminates paper KOT tickets and accelerates order preparation times.",
+      "steps": [
+        "Open Kitchen screen on kitchen display terminals.",
+        "Review incoming preparation tickets categorized by prep station.",
+        "Track elapsed ticket timers with visual color alerts.",
+        "Bump completed orders to advance them to the expo station.",
+        "Flag '86' sold-out items to immediately block front-of-house ordering."
+      ],
+      "screen_filename": "U6_kitchen.jpg"
+    },
+    {
+      "step_id": "U7",
+      "filename": "U7 - Masters Hub.jpg",
+      "heading": "U7 — Masters Management Hub",
+      "where": "Location: Main Navigation > Masters",
+      "note": "Masters hub provides comprehensive menu creation and dish engineering.",
+      "steps": [
+        "Access Masters hub from left navigation.",
+        "Manage parent food categories and sub-categories.",
+        "Configure dishes, selling prices, and kitchen department routing.",
+        "Define item customizers, add-on groups, and combo meals.",
+        "Sync master updates across all till stations in real time."
+      ],
+      "screen_filename": "U7_masters.jpg"
+    },
+    {
+      "step_id": "U8",
+      "filename": "U8 - Back Office Hub.jpg",
+      "heading": "U8 — Back Office Hub",
+      "where": "Location: Main Navigation > Back Office",
+      "note": "Back Office provides managers with complete end-of-day audit controls.",
+      "steps": [
+        "Access Back Office for daily management and fiscal oversight.",
+        "Review today's Sales Ledger and cashier shift drawers.",
+        "Execute official Branch Day Close procedures.",
+        "Track staff attendance through Time Clock.",
+        "Audit system voids, discounts, and employee privilege roles."
+      ],
+      "screen_filename": "U8_back_office.jpg"
+    }
+  ]
+}

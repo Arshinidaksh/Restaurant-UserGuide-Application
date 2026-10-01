@@ -1,0 +1,67 @@
+{
+  "part_id": "O",
+  "part_title": "PART O — SETTINGS > USER",
+  "output_dir": "Part O",
+  "slides": [
+    {
+      "step_id": "O1",
+      "filename": "O1 - User list.jpg",
+      "heading": "O1 — User list",
+      "where": "Location: Settings > User list",
+      "note": "Each staff member must operate with individual credentials for accountability.",
+      "steps": [
+        "Open Settings and select User tab.",
+        "Tap User list to see all employees.",
+        "Add staff: username, full name, role, and branch access.",
+        "Set user status to Active.",
+        "Save and share login details only with that staff person."
+      ],
+      "screen_filename": "O1_user_list.jpg"
+    },
+    {
+      "step_id": "O2",
+      "filename": "O2 - Roles.jpg",
+      "heading": "O2 — Roles",
+      "where": "Location: Settings > Roles",
+      "note": "Role definitions govern system safety and prevent unauthorized operations.",
+      "steps": [
+        "Open Roles screen from User tab.",
+        "Review standard system roles (Admin, Cashier, Food Server, Kitchen, Rider).",
+        "Create custom operational roles only if specifically needed.",
+        "Maintain separation between cashier and manager authorities.",
+        "Never assign Admin role to all staff."
+      ],
+      "screen_filename": "O2_roles.jpg"
+    },
+    {
+      "step_id": "O3",
+      "filename": "O3 - Role Privilege.jpg",
+      "heading": "O3 — Role Privilege",
+      "where": "Location: Settings > Role Privilege",
+      "note": "Privilege changes become active on the user's next login session.",
+      "steps": [
+        "Open Role Privilege from User tab.",
+        "Select target role from dropdown or list.",
+        "Tick only permissions essential for that job (Settle, Stock, Masters, Back Office).",
+        "Save changes.",
+        "Staff must sign out and sign in again so permissions refresh."
+      ],
+      "screen_filename": "O3_role_privilege.jpg"
+    },
+    {
+      "step_id": "O4",
+      "filename": "O4 - PIN Login.jpg",
+      "heading": "O4 — PIN / Login",
+      "where": "Location: Settings > User list (PIN section)",
+      "note": "Immediate account deactivation is a mandatory ISO 27001 compliance rule.",
+      "steps": [
+        "Select user from User list.",
+        "Open PIN / Login credentials section.",
+        "Set or reset staff 4-digit quick-login PIN or password.",
+        "Instruct staff to keep their PIN strictly confidential.",
+        "When staff leaves employment, disable their user account the same day."
+      ],
+      "screen_filename": "O4_pin_login.jpg"
+    }
+  ]
+}
