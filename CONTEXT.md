@@ -132,3 +132,46 @@ All 4 slides generated with `Location:` phrasing and unannotated screenshots in 
 - **Average Query Latency:** **0.085 ms**
 - **Throughput:** **11,739+ Queries/Second**
 - **Capabilities:** Keyword search, role-based filtering, instant troubleshooting retrieval, LLM context generation.
+
+---
+
+## 8. Distributed Cloud Worker Offload Architecture (`worker-offload/`)
+
+To maximize slide throughput and offload compute-intensive workloads, the repository includes a distributed worker subsystem provisioned via DigitalOcean `doctl` with Dockerized microservices.
+
+### Active Cloud Infrastructure
+- **`screenshot-vm`**
+  - **Public IPv4:** `139.59.20.202`
+  - **SSH Access:** `ssh -p 2222 root@139.59.20.202`
+  - **HTTP API:** `http://139.59.20.202:8000`
+  - **Engine:** Playwright Chromium headless in Docker (`screenshot-worker`)
+  - **Worker Capacity:** 4 concurrent browser page sessions
+  - **Features:** Auto POS terminal activation (`C001`), admin login (`admin`/`0000`), pristine 1920x1080 screenshot capture.
+
+- **`image-stitcher-vm`**
+  - **Public IPv4:** `206.189.140.97`
+  - **SSH Access:** `ssh -p 2222 root@206.189.140.97`
+  - **HTTP API:** `http://206.189.140.97:8000`
+  - **Engine:** FastAPI + Pillow with Rubik brand fonts and PC mockup frames in Docker (`stitcher-worker`)
+  - **Worker Capacity:** 8 concurrent image rendering threads
+  - **Features:** High-speed PC frame fitting, anti-aliased number badges, typography wrapping, slide composition, and Lanczos resizing.
+
+### Network Constraint Bypass (Port 2222 SSH)
+Corporate firewalls and certain ISP connections block outbound TCP port 22. Cloud-init scripts configure OpenSSH on both droplets to listen on **Port 2222** (`Port 2222` in `/etc/ssh/sshd_config` and `sshd_config.d/port.conf`).
+
+```bash
+# Connect using Port 2222
+ssh -p 2222 root@139.59.20.202
+ssh -p 2222 root@206.189.140.97
+```
+
+### Automated Scripts & Asynchronous Client
+- **Provision VMs:** `powershell -ExecutionPolicy Bypass -File worker-offload\provisioning\provision_vms.ps1`
+- **Verify Status:** `powershell -ExecutionPolicy Bypass -File worker-offload\provisioning\verify_workers.ps1`
+- **Tear Down:** `powershell -ExecutionPolicy Bypass -File worker-offload\provisioning\teardown_vms.ps1`
+- **Asynchronous Execution:**
+  ```powershell
+  uv run --with httpx python worker-offload\client\async_slide_generator.py --spec specs\part_l_spec.json
+  ```
+  Pipelined throughput reaches **6.6+ slides/second** across the worker fleet.
+
