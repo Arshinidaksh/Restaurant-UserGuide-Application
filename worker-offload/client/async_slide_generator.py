@@ -69,8 +69,9 @@ async def stitch_slide(
     files = {
         "file": (slide_def.get("screen_filename", "screen.jpg"), screen_bytes, "image/jpeg")
     }
+    actual_kicker = slide_def.get("kicker", kicker)
     data = {
-        "kicker": kicker,
+        "kicker": actual_kicker,
         "heading": slide_def.get("heading", ""),
         "where": slide_def.get("where", ""),
         "steps": json.dumps(slide_def.get("steps", [])),
@@ -95,8 +96,9 @@ async def stitch_info_slide(
     semaphore: asyncio.Semaphore
 ) -> bytes:
     endpoint = f"{stitcher_url.rstrip('/')}/compose-info"
+    actual_kicker = slide_def.get("kicker", kicker)
     data = {
-        "kicker": kicker,
+        "kicker": actual_kicker,
         "heading": slide_def.get("heading", ""),
         "description": slide_def.get("description", ""),
         "items": json.dumps(slide_def.get("items", [])),
