@@ -10,7 +10,7 @@ services:
     volumes:
       - ./server.py:/app/server.py
     environment:
-      - WORKER_CONCURRENCY=4
+      - WORKER_CONCURRENCY=10
       - PORT=8000
       - POS_BASE_URL=https://app.restaurant-pos.isarva.in
     shm_size: '2gb'

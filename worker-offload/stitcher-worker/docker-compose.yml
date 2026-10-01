@@ -7,6 +7,9 @@ services:
     restart: unless-stopped
     ports:
       - "8000:8000"
+    volumes:
+      - ./server.py:/app/server.py
+      - ./src:/app/src
     environment:
-      - WORKER_CONCURRENCY=8
+      - WORKER_CONCURRENCY=16
       - PORT=8000

@@ -4,7 +4,7 @@
 #>
 param(
     [string]$Region = "blr1",
-    [string]$Size = "s-2vcpu-4gb",
+    [string]$Size = "s-4vcpu-8gb",
     [string]$Image = "ubuntu-22-04-x64"
 )
 

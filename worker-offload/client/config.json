@@ -1,7 +1,7 @@
 {
   "screenshot_worker_url": "http://139.59.20.202:8000",
   "stitcher_worker_url": "http://206.189.140.97:8000",
-  "screenshot_concurrency": 4,
-  "stitcher_concurrency": 8,
+  "screenshot_concurrency": 10,
+  "stitcher_concurrency": 16,
   "request_timeout_sec": 120
 }
