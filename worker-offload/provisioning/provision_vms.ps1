@@ -99,8 +99,8 @@ $clientConfigFile = "$BaseDir\client\config.json"
 $configData = @{
     screenshot_worker_url = "http://$screenshotIp`:8000"
     stitcher_worker_url = "http://$stitcherIp`:8000"
-    screenshot_concurrency = 4
-    stitcher_concurrency = 8
+    screenshot_concurrency = 10
+    stitcher_concurrency = 16
     request_timeout_sec = 120
 }
 $configData | ConvertTo-Json -Depth 4 | Set-Content -Path $clientConfigFile -Encoding utf8
