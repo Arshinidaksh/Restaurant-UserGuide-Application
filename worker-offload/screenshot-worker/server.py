@@ -54,10 +54,7 @@ async def lifespan(app: FastAPI):
             "--no-sandbox",
             "--disable-setuid-sandbox",
             "--disable-dev-shm-usage",
-            "--disable-gpu",
-            "--no-first-run",
-            "--no-zygote",
-            "--single-process"
+            "--disable-gpu"
         ]
     )
     logger.info("Chromium headless engine ready for captures.")
@@ -97,8 +94,8 @@ async def execute_capture(req: CaptureRequest) -> bytes:
         full_url = f"{base}{req.route}"
         logger.info(f"Navigating to {full_url}")
 
-        await page.goto(base, timeout=45000, wait_until="networkidle")
-        await page.wait_for_timeout(1500)
+        await page.goto(base, timeout=40000)
+        await page.wait_for_timeout(2000)
 
         # Check for Terminal Activation
         if await page.locator('button:has-text("Activate")').count() > 0:
@@ -119,7 +116,7 @@ async def execute_capture(req: CaptureRequest) -> bytes:
 
         # Navigate to target route if different
         if req.route and req.route != "/":
-            await page.goto(full_url, timeout=30000, wait_until="networkidle")
+            await page.goto(full_url, timeout=30000)
             await page.wait_for_timeout(1500)
 
         # Execute actions

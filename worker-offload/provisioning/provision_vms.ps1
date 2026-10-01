@@ -5,7 +5,7 @@
 param(
     [string]$Region = "blr1",
     [string]$Size = "s-2vcpu-4gb",
-    [string]$Image = "ubuntu-24-04-x64"
+    [string]$Image = "ubuntu-22-04-x64"
 )
 
 $ErrorActionPreference = "Stop"
