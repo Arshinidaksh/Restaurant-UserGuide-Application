@@ -123,15 +123,15 @@ def render_step4_with_magnifier(output_path: str):
 
     # 2. Add Magnifier & Button Highlight Circle
     # Coordinates of button on canvas:
-    # center is around (973, 222), size is approx 46x24
-    btn_cx = 973
-    btn_cy = 222
+    # center is around (975, 217), size is approx 46x24
+    btn_cx = 975
+    btn_cy = 217
     
     # Magnifier position: refined diameter 160px, zoom 2.3x
     lens_dia = 160
     lens_img, pad = build_magnifier_lens(
         screen_path,
-        focus_x=1740,
+        focus_x=1748,
         focus_y=30,
         lens_diameter=lens_dia,
         zoom_factor=2.3,
