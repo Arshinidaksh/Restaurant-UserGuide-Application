@@ -1,7 +1,7 @@
 """
 Screenshot Worker Service
 Runs headless Playwright in Docker on screenshot-vm.
-Captures pristine 1920x1080 screens from the live POS application with concurrency management.
+Reuses authenticated browser sessions (cookies + localStorage) for ultra-fast screen captures.
 """
 import os
 import asyncio
@@ -33,16 +33,63 @@ class CaptureRequest(BaseModel):
     viewport_height: int = Field(default=1080)
     quality: int = Field(default=95)
     format: str = Field(default="jpeg")  # "jpeg" or "png"
-    wait_after_actions_ms: int = Field(default=2000)
+    wait_after_actions_ms: int = Field(default=1500)
 
 class WorkerState:
     playwright = None
     browser: Optional[Browser] = None
+    storage_state: Optional[dict] = None
+    auth_lock: asyncio.Lock = asyncio.Lock()
     semaphore: asyncio.Semaphore = asyncio.Semaphore(WORKER_CONCURRENCY)
     active_jobs: int = 0
     total_processed: int = 0
 
 state = WorkerState()
+
+async def ensure_authenticated_session(base_url: str, force_refresh: bool = False) -> dict:
+    """Pre-authenticates and saves localStorage + cookies state to eliminate login overhead."""
+    async with state.auth_lock:
+        if state.storage_state is not None and not force_refresh:
+            return state.storage_state
+
+        logger.info(f"Authenticating master POS session at {base_url}...")
+        context = await state.browser.new_context(
+            viewport={"width": 1920, "height": 1080}
+        )
+        page = await context.new_page()
+
+        try:
+            base = base_url.rstrip("/")
+            await page.goto(base, timeout=40000)
+            await page.wait_for_timeout(2000)
+
+            # 1. Terminal Activation
+            if await page.locator('button:has-text("Activate")').count() > 0:
+                logger.info("Activating terminal (C001)...")
+                await page.locator('input').first.fill("C001")
+                await page.locator('button:has-text("Activate")').click()
+                await page.wait_for_timeout(2500)
+
+            # 2. Admin Login
+            if await page.locator('button:has-text("OK")').count() > 0:
+                logger.info("Logging in as Admin (admin / 0000)...")
+                inputs = await page.locator('input').all()
+                if len(inputs) >= 2:
+                    await inputs[0].fill("admin")
+                    await inputs[1].fill("0000")
+                    await page.locator('button:has-text("OK")').click()
+                    await page.wait_for_timeout(3000)
+
+            state.storage_state = await context.storage_state()
+            logger.info("Master POS session captured successfully and cached for reuse.")
+            return state.storage_state
+
+        except Exception as e:
+            logger.error(f"Error establishing authenticated session: {e}", exc_info=True)
+            raise e
+        finally:
+            await page.close()
+            await context.close()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -57,15 +104,21 @@ async def lifespan(app: FastAPI):
             "--disable-gpu"
         ]
     )
-    logger.info("Chromium headless engine ready for captures.")
+    logger.info("Chromium headless engine ready. Warming up master session...")
+    try:
+        await ensure_authenticated_session(DEFAULT_POS_URL)
+    except Exception as e:
+        logger.warning(f"Initial warm-up failed, will authenticate on first request: {e}")
+
     yield
+
     if state.browser:
         await state.browser.close()
     if state.playwright:
         await state.playwright.stop()
     logger.info("Playwright shutdown complete.")
 
-app = FastAPI(title="Screenshot Worker API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="Screenshot Worker API", version="1.1.0", lifespan=lifespan)
 
 @app.get("/health")
 async def health_check():
@@ -76,50 +129,63 @@ async def health_check():
         "concurrency_limit": WORKER_CONCURRENCY,
         "active_jobs": state.active_jobs,
         "total_processed": state.total_processed,
+        "session_cached": state.storage_state is not None,
         "browser_ready": state.browser is not None
     }
+
+@app.post("/refresh-session")
+async def refresh_session():
+    """Forces re-authentication and updates the cached session."""
+    storage = await ensure_authenticated_session(DEFAULT_POS_URL, force_refresh=True)
+    return {"status": "session_refreshed", "cookies": len(storage.get("cookies", []))}
 
 async def execute_capture(req: CaptureRequest) -> bytes:
     if not state.browser:
         raise HTTPException(status_code=503, detail="Browser engine not initialized")
 
+    base = (req.base_url or DEFAULT_POS_URL).rstrip("/")
+    storage = await ensure_authenticated_session(base)
+
+    # Spawn context with pre-authenticated storage state (zero login overhead)
     context: BrowserContext = await state.browser.new_context(
+        storage_state=storage,
         viewport={"width": req.viewport_width, "height": req.viewport_height},
         device_scale_factor=1.0
     )
     page = await context.new_page()
 
     try:
-        base = (req.base_url or DEFAULT_POS_URL).rstrip("/")
-        full_url = f"{base}{req.route}"
-        logger.info(f"Navigating to {full_url}")
+        full_url = f"{base}{req.route}" if req.route else base
+        logger.info(f"Navigating directly to {full_url} with reused session")
 
-        await page.goto(base, timeout=40000)
-        await page.wait_for_timeout(2000)
+        await page.goto(full_url, timeout=30000)
+        await page.wait_for_timeout(1000)
 
-        # Check for Terminal Activation
-        if await page.locator('button:has-text("Activate")').count() > 0:
-            logger.info("Performing terminal activation (C001)...")
-            await page.locator('input').first.fill("C001")
-            await page.locator('button:has-text("Activate")').click()
-            await page.wait_for_timeout(2500)
+        # Fallback check if session expired or lost
+        if await page.locator('button:has-text("Activate")').count() > 0 or await page.locator('button:has-text("OK")').count() > 0:
+            logger.info("Session expired or unauthenticated. Re-authenticating...")
+            if await page.locator('button:has-text("Activate")').count() > 0:
+                await page.locator('input').first.fill("C001")
+                await page.locator('button:has-text("Activate")').click()
+                await page.wait_for_timeout(2000)
 
-        # Check for Admin Login
-        if await page.locator('button:has-text("OK")').count() > 0:
-            logger.info("Performing admin login...")
-            inputs = await page.locator('input').all()
-            if len(inputs) >= 2:
-                await inputs[0].fill("admin")
-                await inputs[1].fill("0000")
-                await page.locator('button:has-text("OK")').click()
-                await page.wait_for_timeout(3000)
+            if await page.locator('button:has-text("OK")').count() > 0:
+                inputs = await page.locator('input').all()
+                if len(inputs) >= 2:
+                    await inputs[0].fill("admin")
+                    await inputs[1].fill("0000")
+                    await page.locator('button:has-text("OK")').click()
+                    await page.wait_for_timeout(2500)
 
-        # Navigate to target route if different
-        if req.route and req.route != "/":
-            await page.goto(full_url, timeout=30000)
-            await page.wait_for_timeout(1500)
+            # Update master storage state
+            state.storage_state = await context.storage_state()
 
-        # Execute actions
+            # Re-navigate to target
+            if req.route and req.route != "/":
+                await page.goto(full_url, timeout=20000)
+                await page.wait_for_timeout(1000)
+
+        # Execute custom user actions if specified
         for act in (req.actions or []):
             if act.type == "wait":
                 await page.wait_for_timeout(act.ms or 1000)
@@ -134,7 +200,7 @@ async def execute_capture(req: CaptureRequest) -> bytes:
                     await loc.first.fill(act.value or "")
                     await page.wait_for_timeout(300)
 
-        # Allow any toasts or animations to settle
+        # Settle any active UI transitions/toasts
         await page.wait_for_timeout(req.wait_after_actions_ms)
 
         img_format = "jpeg" if req.format.lower() in ("jpg", "jpeg") else "png"
@@ -142,7 +208,6 @@ async def execute_capture(req: CaptureRequest) -> bytes:
         if img_format == "jpeg":
             kwargs["quality"] = req.quality
 
-        # Pristine unannotated screenshot
         screenshot_bytes = await page.screenshot(**kwargs)
         return screenshot_bytes
 
