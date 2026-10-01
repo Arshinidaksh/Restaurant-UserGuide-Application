@@ -1,0 +1,14 @@
+services:
+  screenshot-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: screenshot-worker
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - WORKER_CONCURRENCY=4
+      - PORT=8000
+      - POS_BASE_URL=https://app.restaurant-pos.isarva.in
+    shm_size: '2gb'

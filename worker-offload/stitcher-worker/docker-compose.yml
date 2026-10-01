@@ -1,0 +1,12 @@
+services:
+  stitcher-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: stitcher-worker
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - WORKER_CONCURRENCY=8
+      - PORT=8000
